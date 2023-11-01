@@ -3,14 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Minha Página Inicial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        p {
+            color: #333;
+        }
+
+        #github-link {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        #github-link:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .animated {
+            animation: fadeIn 1.5s ease-in;
+        }
+    </style>
 </head>
 <body>
-    <h1>Olá, eu sou um iniciante no estudo de desenvolvimento e GitHub!</h1>
-    <p>Meu nome é [Seu Nome] e estou apenas começando minha jornada no mundo da programação e no uso do GitHub.</p>
-    <p>Estou empolgado para aprender mais sobre como criar sites e aplicativos e colaborar com outros desenvolvedores no GitHub.</p>
+    <div class="container animated">
+        <h1>Olá, eu sou um iniciante no estudo de desenvolvimento e GitHub!</h1>
+        <p>Meu nome é David e estou apenas começando minha jornada no mundo da programação e no uso do GitHub.</p>
+        <p>Estou empolgado para aprender mais sobre como criar sites e aplicativos e colaborar com outros desenvolvedores no GitHub.</p>
 
-    <p>Se você quiser entrar em contato comigo ou me seguir no GitHub, aqui está o meu perfil: <a href="https://github.com/seu-nome-de-usuario">https://github.com/seu-nome-de-usuario</a></p>
+        <p>Se você quiser entrar em contato comigo ou me seguir no GitHub, aqui está o meu perfil: <a id="github-link" href="https://github.com/0xdavidmorato">https://github.com/0xdavidmorato</a></p>
 
-    <p>Este é apenas o começo da minha jornada, e mal posso esperar para ver onde isso me levará!</p>
+        <p>Este é apenas o começo da minha jornada, e mal posso esperar para ver onde isso me levará!</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
