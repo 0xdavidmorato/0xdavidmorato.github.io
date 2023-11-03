@@ -1,18 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <title>Minha Página Inicial</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+      header {
+            background-color: #086108;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            width: 100px; /* Ajuste o tamanho do logotipo conforme necessário */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff9900; /* Cor ao passar o mouse */
+        }
+      
         body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            font-family: "Helvetica Neue", Arial, sans-serif;
         }
 
         .container {
-            background-color: #fff;
-            margin-top: 30px; /* Adicione a propriedade de margem para espaçar o container do topo */
+            background-color: #ffffff;
+            margin-top: 30px;
             padding: 20px;
             padding-top: 30px;
             border-radius: 10px;
@@ -20,11 +52,20 @@
         }
 
         h1 {
-            color: #007BFF;
+            color: #086108;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        h2 {
+            color: #555;
+            font-size: 20px;
+            font-weight: bold;
         }
 
         p {
-            color: #333;
+            color: #555;
+            font-size: 16px;
         }
 
         #github-link {
@@ -51,19 +92,67 @@
     </style>
 </head>
 <body>
+  <header>
+        <!-- Logotipo -->
+        <div class="logo">
+            <img src="https://w7.pngwing.com/pngs/1018/580/png-transparent-help-desk-technical-support-information-technology-helpline-business-text-service-people.png" alt="Logo da Minha Empresa">
+        </div>
+        
+        <!-- Menu de Navegação -->
+        <nav>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+  
     <div class="container animated">
-        <h1>Olá, eu sou um iniciante no estudo de desenvolvimento e GitHub!</h1>
+        <h1>Bem vindo!</h1>
         <p>Meu nome é David e estou apenas começando minha jornada no mundo da programação e no uso do GitHub.</p>
         <p>Estou empolgado para aprender mais sobre como criar sites e aplicativos e colaborar com outros desenvolvedores no GitHub.</p>
 
         <p>Se você quiser entrar em contato comigo ou me seguir no GitHub, aqui está o meu perfil: <a id="github-link" href="https://github.com/0xdavidmorato">https://github.com/0xdavidmorato</a></p>
 
         <p>Este é apenas o começo da minha jornada, e mal posso esperar para ver onde isso me levará!</p>
+       <p>Para começar vou listar abaixo alguns serviços freelance que eu faço :)</p>
     </div>
+
+    <div class="container animated">
+    <h1>Manutenção de Computadores e Outros Serviços de Informática</h1>
+    <p>Serviços oferecidos:</p>
+    <ul>
+        <li>Manutenção de Computadores e Notebooks</li>
+        <li>Criação de Apresentações no Canva</li>
+        <!-- Adicione outros serviços relacionados, se houver -->
+    </ul>
+
+    <h2>Quanto custa para consertar meu computador?</h2>
+    <p>O custo médio estimado é de aproximadamente R$ 500,00, mas pode variar de acordo com os serviços executados, tais como:</p>
+    <ul>
+        <li>Backup</li>
+        <li>Formatação</li>
+        <li>Remoção de Vírus</li>
+        <li>Troca de Peças</li>
+        <li>Hardware do Computador</li>
+    </ul>
+
+    <p>Ao solicitar seu orçamento, seja detalhista ao descrever o que ocorre com o computador e, principalmente, as especificações (marca, modelo, sistema operacional, tempo de uso, etc).</p>
+    <p>Estamos aqui para ajudá-lo com seus problemas de informática e garantir que seu dispositivo funcione da melhor forma possível.</p>
+
+    <h2>Formatação e Backup</h2>
+    <p>De acordo com o reparo, poderá ser necessário realizar a formatação do computador e, consequentemente, antes da formatação, é imprescindível realizar o backup para evitar a perda de arquivos importantes. Ambos os serviços são cobrados à parte, sendo:</p>
+    <ul>
+        <li>Backup (cópia dos documentos e arquivos que estão no computador): R$ 40,00 por GB</li>
+        <li>Formatação (Reinstalação completa do sistema operacional): R$ 250,00</li>
+    </ul>
+
+    <p>Também é importante observar que se o conserto for realizado a domicílio, será cobrada uma taxa de deslocamento de R$ 200,00 + R$ 5,00 por quilômetro de distância considerando ida e volta.</p>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
