@@ -61,6 +61,7 @@
         }
 
         .container {
+            position: relative;
             background-color: #ffffff;
             margin-top: 30px;
             margin-bottom: 30px;
@@ -116,27 +117,39 @@
         }
       
       /* Estilos para o container de formas de contato */
-.contact-method {
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #DAF7A6;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
+        .contact-method {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #DAF7A6;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
 
+        p a {
+            text-decoration: none;
+            color: #000BFF;
+            transition: color 0.3s;
+        }
 
+        p a:hover {
+            text-decoration: underline;
+            color: #ff9900; /* Cor ao passar o mouse */
 
-p a {
+        }
+    .back-to-top {
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
     text-decoration: none;
-    color: #000BFF;
-    transition: color 0.3s;
+    background-color: #086108;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
 }
 
-p a:hover {
-    text-decoration: underline;
-    color: #ff9900; /* Cor ao passar o mouse */
-  
-}
+      .back-to-top:hover {
+          background-color: #ff9900; /* Cor ao passar o mouse */
+      }
 
       
     </style>
@@ -162,9 +175,8 @@ p a:hover {
         <h1>Bem vindo!</h1>
         <p>Meu nome é David, e presto serviços de assistência técnica para computadores e notebooks, além de atuar como freelancer em design gráfico e desenvolvimento de websites.</p>
         <p>Aqui você encontrará uma variedade de serviços que refletem minha dedicação ao que faço e é também uma forma de divulgar meu trabalho.</p>
-        <p>Se você precisar de algum dos serviços listados nessa página, estou a disposição para conversarmos. <i class="fa fa-smile-o" aria-hidden="true"></i></p>
-        <img src="https://lh3.googleusercontent.com/pw/ADCreHemFLxJA-8i3jpVIUrMY6seZTO4ZvKa4_2qx-f-UJujG5RJsSnEqoM70XWiAUMIKJCekXti5Tm2gMbx3cChIrFETJaC_tjKJ4Hbc3VqPBliuJ58FrOq50CPckICqA5hbx7K8Htcw9deSdqkyhaAw1fEgpmN1yBOv9KamG1VvFV5IZClL2VGASs9mobchAvPrRfCeNbEi_1rGG2dhkVRH5ciYLPK9tkGVXYzDyKUbmGUGZnMOF_hqUK3BKNOYXiUGg0a3vd65yZFs1P-1gWWJAYy95gf5Yrg_tLSfWyHJUkPcFFzzSB6DnZyGtDO27-sWm6ebALosvt5tGR7KWLh_OEU48uxaztc7qOODrh7DOn1doowqSQdUHvKipSB-tE2MrOZLjbv7J1W8CwekJ-uEWkNCYCx8m1AlLdpLV4WGMtB48_GbtuO2m8b2_VnH5JfeZIvY3h3Liro4Pjylk92hWhMvSnwVTo5hGuuYrVUtLgGNDIy4a9Kwt3mrkiOtfDTmX993JP8l_JUyWMPaa0ef_IZvotOr-2t6zFSHca9W33tj7s8bpyiCYefqOC-CVkUjwXqGQP5p2ZrdX4QOWl82bIo0SLus5BTozzW2pTJioC6Cu0ANkgi1I5oW2gLksbtO67UsButZiva2coWdZ7eJ4AUj6gdXZfg8m4zSGVPVti9rV8sJ7b_C32pntfP5h1knhCi7lHvPop2HYmVs3pPNL6AaWGD5tmql-OLvzduDw_KoRSfZR0RxxZAqBloi0Cacv1-eyHGJEgiZKUlp6vzwv7JJBen9Ow6iX2UUi93trSDbh72zHO3PjbKfKVoRgaNTFm8zHPkvUCJghYaYxKwkR9aFIeos3CTiCScbYs2xv4NYnam7TwVVZ5yyzdhErKwigUCbLz_tQryo0rODxGAjl6o86zYazCpWS5_sdtSogvaEbrCvbOHluxl_SH_JpGkqjRwymA3Q1R3u6aGAHm9DqYqUoPbZw=w512-h512-s-no-gm?authuser=0" alt="Hardware" style="width: 120px; height: 120px;">
-        <img src="https://lh3.googleusercontent.com/pw/ADCreHddcvxaWHhHZPHbb8i9uqn5H9szbhBrBbuGRgq8wZCIGtKBf4uyKqvzMr8ynmohoAAk0zoqri-Q1UPGlHs_YgHfEo16Qhg5IMTv_s1CgKxRMRqSFdtt1mkQX5vjEJp6tjmby_ru9BLtkSUCTNOfQyxmiqbjcUSe_Ne1r6dpSc5yITbGHZyBpo76-XoKDMOHKx9yJeC6-Iw1PO7A1TsguE9bL9jYPhULkMABZB7kZ3g7KzAQBVSHtT36ftLCIJ6R09lk9DFKG2LEjTve8Otvn4dYcGYu3BylMy9gvB2TUkKvTa2V3V-tlEfDlm9xk4aKZKiAo-KyBOcQuF1IMx76Iq6FNk6VC8FaCRIwKREN3qcGyKTP6onaY64HZZgDtbN2I9d-wm1ELiY1lQXgfnsvYdkaBKkcuN41r876atkQwRKxhibNpbQuN212IoqqIJCrLZC9bZzIaV9sz-cLmI9REEhv_KUEtbfDhB4rBVr6CcQSaAYAjea4INwg3jLJNHKby9jrNhsJn0AJd-feslQKOadT7VnFt3bkeZVtN08iBLhB2SPjLonc2_xvGg3lhYHUR_VpzP50GMnXNo2jMjbEWXHgybymG5t8yS2QWVpJwk0yF6NFRPXH3cKJv_1FIqjxTbPlb_lFCsg9TsxnBZqpuKOKeRtBHIJBb9F201JUy2ZdesxwJ00vqSafXwnhzwp-Gd2Sb8VpD36aL_x2rZzweqLrPQPkwwGxUDIjbyZ3gAXAEZqyJ7PyQdWktM9WC4tGieA3jW469sow3CGqIkJ-WPFZY-kQjTo9VB2esgu9ixijYvpUO_aPyj7Ic71M0ZcgiE12YWmubsks17cl7FuOrXK5NbXnsr8sCN2cNsovaqaq_pbFAz_hVlZnL7tluQ7070u6DoK-3ZQ2ZavFQHaRPkG6oAgoVVMaq3Q_SYBlz1veUDBNkbGLK6hO9xNB7Mlibi3TEUUQTGWhzBqGN8Znv9L0vMUYyQ=w512-h512-s-no-gm?authuser=0" alt="Software" style="width: 120px; height: 120px;">
+        <p>Se você precisar de algum dos serviços listados nessa página, estou a disposição para conversarmos. Caso queira me seguir no GitHub, meu perfil é: <a id="github-link" href="https://github.com/0xdavidmorato">https://github.com/0xdavidmorato</a></p><img src="https://lh3.googleusercontent.com/pw/ADCreHemFLxJA-8i3jpVIUrMY6seZTO4ZvKa4_2qx-f-UJujG5RJsSnEqoM70XWiAUMIKJCekXti5Tm2gMbx3cChIrFETJaC_tjKJ4Hbc3VqPBliuJ58FrOq50CPckICqA5hbx7K8Htcw9deSdqkyhaAw1fEgpmN1yBOv9KamG1VvFV5IZClL2VGASs9mobchAvPrRfCeNbEi_1rGG2dhkVRH5ciYLPK9tkGVXYzDyKUbmGUGZnMOF_hqUK3BKNOYXiUGg0a3vd65yZFs1P-1gWWJAYy95gf5Yrg_tLSfWyHJUkPcFFzzSB6DnZyGtDO27-sWm6ebALosvt5tGR7KWLh_OEU48uxaztc7qOODrh7DOn1doowqSQdUHvKipSB-tE2MrOZLjbv7J1W8CwekJ-uEWkNCYCx8m1AlLdpLV4WGMtB48_GbtuO2m8b2_VnH5JfeZIvY3h3Liro4Pjylk92hWhMvSnwVTo5hGuuYrVUtLgGNDIy4a9Kwt3mrkiOtfDTmX993JP8l_JUyWMPaa0ef_IZvotOr-2t6zFSHca9W33tj7s8bpyiCYefqOC-CVkUjwXqGQP5p2ZrdX4QOWl82bIo0SLus5BTozzW2pTJioC6Cu0ANkgi1I5oW2gLksbtO67UsButZiva2coWdZ7eJ4AUj6gdXZfg8m4zSGVPVti9rV8sJ7b_C32pntfP5h1knhCi7lHvPop2HYmVs3pPNL6AaWGD5tmql-OLvzduDw_KoRSfZR0RxxZAqBloi0Cacv1-eyHGJEgiZKUlp6vzwv7JJBen9Ow6iX2UUi93trSDbh72zHO3PjbKfKVoRgaNTFm8zHPkvUCJghYaYxKwkR9aFIeos3CTiCScbYs2xv4NYnam7TwVVZ5yyzdhErKwigUCbLz_tQryo0rODxGAjl6o86zYazCpWS5_sdtSogvaEbrCvbOHluxl_SH_JpGkqjRwymA3Q1R3u6aGAHm9DqYqUoPbZw=w512-h512-s-no-gm?authuser=0" alt="Hardware" style="width: 120px; height: 120px;">
+      <img src="https://lh3.googleusercontent.com/pw/ADCreHddcvxaWHhHZPHbb8i9uqn5H9szbhBrBbuGRgq8wZCIGtKBf4uyKqvzMr8ynmohoAAk0zoqri-Q1UPGlHs_YgHfEo16Qhg5IMTv_s1CgKxRMRqSFdtt1mkQX5vjEJp6tjmby_ru9BLtkSUCTNOfQyxmiqbjcUSe_Ne1r6dpSc5yITbGHZyBpo76-XoKDMOHKx9yJeC6-Iw1PO7A1TsguE9bL9jYPhULkMABZB7kZ3g7KzAQBVSHtT36ftLCIJ6R09lk9DFKG2LEjTve8Otvn4dYcGYu3BylMy9gvB2TUkKvTa2V3V-tlEfDlm9xk4aKZKiAo-KyBOcQuF1IMx76Iq6FNk6VC8FaCRIwKREN3qcGyKTP6onaY64HZZgDtbN2I9d-wm1ELiY1lQXgfnsvYdkaBKkcuN41r876atkQwRKxhibNpbQuN212IoqqIJCrLZC9bZzIaV9sz-cLmI9REEhv_KUEtbfDhB4rBVr6CcQSaAYAjea4INwg3jLJNHKby9jrNhsJn0AJd-feslQKOadT7VnFt3bkeZVtN08iBLhB2SPjLonc2_xvGg3lhYHUR_VpzP50GMnXNo2jMjbEWXHgybymG5t8yS2QWVpJwk0yF6NFRPXH3cKJv_1FIqjxTbPlb_lFCsg9TsxnBZqpuKOKeRtBHIJBb9F201JUy2ZdesxwJ00vqSafXwnhzwp-Gd2Sb8VpD36aL_x2rZzweqLrPQPkwwGxUDIjbyZ3gAXAEZqyJ7PyQdWktM9WC4tGieA3jW469sow3CGqIkJ-WPFZY-kQjTo9VB2esgu9ixijYvpUO_aPyj7Ic71M0ZcgiE12YWmubsks17cl7FuOrXK5NbXnsr8sCN2cNsovaqaq_pbFAz_hVlZnL7tluQ7070u6DoK-3ZQ2ZavFQHaRPkG6oAgoVVMaq3Q_SYBlz1veUDBNkbGLK6hO9xNB7Mlibi3TEUUQTGWhzBqGN8Znv9L0vMUYyQ=w512-h512-s-no-gm?authuser=0" alt="Software" style="width: 120px; height: 120px;">
     </div>
 
     <div id="servicos" class="container animated">
@@ -223,6 +235,7 @@ p a:hover {
             <li>Design de Capas de Livros e E-books</li>
             <li>Personalização de Modelos de Apresentações</li>
     </ul>
+      <a class="back-to-top" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
     </div>
     <div id="valores" class="container animated">
     <h1 style="text-align: center;">Estimativa de Valores</h1><br>
@@ -254,6 +267,7 @@ p a:hover {
     <li>Se você optar por um pacote de 10 imagens, o valor total é de <b>R$ 500,00</b>, tornando cada imagem apenas <b>R$ 50,00.</b></li>
       </ul>
     <p>Estou à disposição para discutir seus projetos e garantir que você obtenha ótimos resultados visuais que se encaixem no seu orçamento.</p>
+      <a class="back-to-top" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 </div>
 
 <div class="container animated">
@@ -268,6 +282,7 @@ p a:hover {
         <li>Bitcoin (<i class="fa fa-btc"></i>)</li>
         <!-- Adicione outras opções de pagamento, se necessário -->
     </ul>
+  <a class="back-to-top" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 </div>
     
   <div class="container animated">
@@ -279,6 +294,7 @@ p a:hover {
         <p>
             <i class="fa fa-envelope-o"></i> <a href="mailto:0xdavidmorato@gmail.com"> 0xdavidmorato@gmail.com</a>
         </p>
+      
     </div>
 
     <div class="contact-method">
@@ -286,7 +302,9 @@ p a:hover {
         <p>
             <i class="fa fa-whatsapp"></i> (11) 97320-8881
         </p>
+      
     </div>
+    <a class="back-to-top" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 </div>
 
 <!-- Rodapé -->
