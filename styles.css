@@ -135,7 +135,10 @@ header {
             font-family: "Helvetica Neue", Arial, sans-serif;
         }
         
- 
+         .containers-wrapper {
+          display: grid;
+          flex-wrap: wrap; /* Permite que os containers se quebrem para a linha seguinte se não houver espaço suficiente */
+        }
         .container {
             position: relative;
             background-color: #ffffff;
