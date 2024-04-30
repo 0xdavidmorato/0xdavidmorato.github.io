@@ -30,7 +30,7 @@ button {
 .reset {
   position: relative;
   margin: 1rem auto; /* Centralizar horizontalmente */
-  margin-top: 20px; /* Ajustar a margem superior para garantir que o botão seja visível */
+  margin-top: 40px; /* Ajustar a margem superior para garantir que o botão seja visível */
   font-size: 1.25rem;
   text-transform: uppercase;
   border: 1px solid;
@@ -156,6 +156,7 @@ html {
 
 /* Centralizar os containers na tela */
 .containers-wrapper {
+  padding: 20px; /* Adicionar padding para criar espaçamento entre os containers */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -168,7 +169,7 @@ html {
   z-index: 1; /* Definir o z-index dos containers para 1 */
   position: relative;
   background-color: #ffffff;
-  margin-top: 0;
+  margin-top: 20;
   padding: 20px;
   padding-top: 30px;
   border-radius: 10px;
@@ -196,6 +197,7 @@ p {
 li {
   color: #555;
   font-size: 16px;
+  word-wrap: break-word; /* Quebrar palavra para evitar que os itens transbordem para o próximo container */
 }
 
 #github-link {
