@@ -21,18 +21,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  bubbleContainer.addEventListener("click", function (e) {
-    if (e.target.classList.contains("bubble")) {
-      const bubble = e.target;
-      bubble.classList.add("burst");
+bubbleContainer.addEventListener("click", function (e) {
+  if (e.target.classList.contains("bubble")) {
+    const bubble = e.target;
+    bubble.classList.add("burst");
 
-      setTimeout(() => {
-        bubble.remove();
-      }, 300);
-      count++;
-      counterDisplay.textContent = count;
-    }
-  });
+    setTimeout(() => {
+      bubble.remove();
+    }, 300);
+    count++;
+    counterDisplay.textContent = count;
+  }
+});
 
   resetBtn.addEventListener("click", function () {
     bubbleContainer.innerHTML = "";
