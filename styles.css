@@ -30,6 +30,7 @@ button {
 .reset {
   position: relative;
   margin: 1rem auto; /* Centralizar horizontalmente */
+  margin-top: 20px; /* Ajustar a margem superior para garantir que o botão seja visível */
   font-size: 1.25rem;
   text-transform: uppercase;
   border: 1px solid;
@@ -171,7 +172,7 @@ html {
   padding-top: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  min-height: 300px; /* Definindo uma altura mínima */
+  min-height: 600px; /* Definindo uma altura mínima */
 }
 
 h1 {
