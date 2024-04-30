@@ -59,21 +59,7 @@ button {
   &.burst {
     animation: bubbleBurst 0.3s forwards;
   }
-
-/* Estilizar o botão reset */
-.reset {
-  margin: 1rem auto; /* Centralizar horizontalmente */
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  border: 1px solid;
-  box-shadow: #222 0px 8px 0px 0px;
-  cursor: pointer; /* Adicionado cursor pointer */
 }
-.reset:active {
-  box-shadow: 0px 2px 0px 0px;
-  transform: translateY(6px);
-}
-
 
 /* Animação de explosão das bolhas */
 @keyframes bubbleBurst {
@@ -102,6 +88,7 @@ header {
   align-items: center;
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Garante que o cabeçalho esteja acima de outros elementos */
 }
 
 /* Estilo do logotipo */
@@ -162,6 +149,7 @@ html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   max-width: 600px; /* Limitar a largura do container para evitar que fique muito largo */
 }
+
 h1 {
   color: #086108;
   font-size: 25px;
