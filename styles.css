@@ -28,6 +28,7 @@ button {
 
 /* Estilizar o botão reset */
 .reset {
+  position: relative;
   margin: 1rem auto; /* Centralizar horizontalmente */
   font-size: 1.25rem;
   text-transform: uppercase;
@@ -36,6 +37,7 @@ button {
   cursor: pointer; /* Adicionado cursor pointer */
   padding: 0.5em 1.25em; /* Adicionado espaçamento interno */
   border-radius: 1rem; /* Adicionado borda arredondada */
+  z-index: 2;
 }
 
 .reset:active {
@@ -59,7 +61,7 @@ button {
   position: relative; /* Alterado para relative */
   top: 0; /* Adicionado */
   left: 0; /* Adicionado */
-  z-index: -1; /* Adicionado */
+  z-index: 1; /* Adicionado */
 }
 
 /* Estilo das bolhas */
@@ -164,7 +166,7 @@ html {
 .container {
   position: relative;
   background-color: #ffffff;
-  margin-top: 30px;
+  margin-top: 0;
   padding: 20px;
   padding-top: 30px;
   border-radius: 10px;
