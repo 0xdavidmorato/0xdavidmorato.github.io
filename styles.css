@@ -121,6 +121,7 @@ header {
             color: #ff9900; /* Cor ao passar o mouse */
         }
         footer {
+            margin-top: 20px; /* Adicione a margem superior desejada */
             background-color: #086108;
             padding: 20px;
             text-align: center;
