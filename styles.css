@@ -7,6 +7,34 @@ $bubbles: 20;
 *::after {
   box-sizing: border-box;
 }
+/* Animação de flutuação das bolhas */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Estilo das bolhas */
+.bubble {
+  border: 1px solid #999;
+  border-radius: 50%;
+  position: absolute;
+  cursor: crosshair;
+  background-color: rgb(255 255 255 / 20%);
+  backdrop-filter: blur(4px);
+}
+
+/* Aplicar animação de flutuação às bolhas */
+.bubble {
+  animation: float 3s ease-in-out infinite alternate;
+}
+
 
 /* Estilo do corpo do documento */
 body {
