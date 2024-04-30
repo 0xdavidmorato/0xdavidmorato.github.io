@@ -27,6 +27,24 @@ button {
   cursor: pointer;
 }
 
+/* Estilizar o botão reset */
+.reset {
+  margin: 1rem auto; /* Centralizar horizontalmente */
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  border: 1px solid;
+  box-shadow: #222 0px 8px 0px 0px;
+  cursor: pointer; /* Adicionado cursor pointer */
+  padding: 0.5em 1.25em; /* Adicionado espaçamento interno */
+  border-radius: 1rem; /* Adicionado borda arredondada */
+}
+
+.reset:active {
+  box-shadow: 0px 2px 0px 0px;
+  transform: translateY(6px);
+}
+
+
 /* Contador (caso exista) */
 .counter {
   position: fixed;
