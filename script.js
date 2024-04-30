@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function getRandomPos() {
-    const x = Math.floor(Math.random() * (window.innerWidth - 100));
-    const y = Math.floor(Math.random() * (window.innerHeight - 100));
-    return { x, y };
-  }
+  const x = Math.floor(Math.random() * (window.innerWidth - 100));
+  const y = Math.floor(Math.random() * (window.innerHeight - 100));
+  return { x, y };
+}
 
   function getRandomSize(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
