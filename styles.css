@@ -165,6 +165,7 @@ html {
 
 /* Estilizar os contêineres de serviço */
 .container {
+  z-index: 1; /* Definir o z-index dos containers para 1 */
   position: relative;
   background-color: #ffffff;
   margin-top: 0;
