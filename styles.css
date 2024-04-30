@@ -141,12 +141,16 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Containers de serviço */
+/* Centralizar os containers na tela */
 .containers-wrapper {
   display: flex;
-  flex-wrap: wrap; /* Permite que os containers se quebrem para a linha seguinte se não houver espaço suficiente */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Garante que o conteúdo seja centralizado verticalmente */
 }
 
+/* Estilizar os contêineres de serviço */
 .container {
   position: relative;
   background-color: #ffffff;
@@ -155,12 +159,8 @@ html {
   padding-top: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  flex: 1; /* Distribui o espaço igualmente entre os containers */
-  margin: auto; /* Centralizar horizontalmente */
-  top: 50%; /* Centralizar verticalmente */
-  transform: translateY(-50%);
+  max-width: 600px; /* Limitar a largura do container para evitar que fique muito largo */
 }
-
 h1 {
   color: #086108;
   font-size: 25px;
@@ -228,8 +228,9 @@ p a:hover {
   color: #ff9900; /* Cor ao passar o mouse */
 }
 
+/* Ajustar a posição do link "Voltar ao topo" */
 .back-to-top {
-  position: absolute;
+  position: fixed; /* Corrigido para posição fixa */
   right: 10px;
   bottom: 10px;
   text-decoration: none;
