@@ -1,26 +1,40 @@
-/* Definições de variáveis Sass */
 $bubbles: 20;
 
-/* Configurações gerais */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-/* Animação de flutuação das bolhas */
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+
+body {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Estilo das bolhas */
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0.5em 1.25em;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.counter {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 3rem;
+}
+
+.bubble-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1
+}
+
 .bubble {
   border: 1px solid #999;
   border-radius: 50%;
@@ -28,11 +42,45 @@ $bubbles: 20;
   cursor: crosshair;
   background-color: rgb(255 255 255 / 20%);
   backdrop-filter: blur(4px);
+
+  @for $i from 1 through $bubbles {
+    &:nth-of-type(#{$i}) {
+      animation: 2.5s float ease-in-out infinite ($i * 0.2s);
+    }
+  }
+  &.burst {
+    animation: bubbleBurst 0.3s forwards;
+  }
 }
 
-/* Aplicar animação de flutuação às bolhas */
-.bubble {
-  animation: float 3s ease-in-out infinite alternate;
+.reset {
+  z-index: 2;
+  margin: 1rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  border: 1px solid;
+  box-shadow: #222 0px 8px 0px 0px;
+  &:active {
+    box-shadow: 0px 2px 0px 0px;
+    transform: translateY(6px);
+  }
+}
+
+@keyframes bubbleBurst {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-6px);
+  }
 }
 
 
@@ -54,82 +102,15 @@ button {
   cursor: pointer;
 }
 
-/* Estilizar o botão reset */
-.reset {
-  position: relative;
-  margin: 1rem auto; /* Centralizar horizontalmente */
-  margin-top: 40px; /* Ajustar a margem superior para garantir que o botão seja visível */
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  border: 1px solid;
-  box-shadow: #222 0px 8px 0px 0px;
-  cursor: pointer; /* Adicionado cursor pointer */
-  padding: 0.5em 1.25em; /* Adicionado espaçamento interno */
-  border-radius: 1rem; /* Adicionado borda arredondada */
-  z-index: 2;
-}
 
-.reset:active {
-  box-shadow: 0px 2px 0px 0px;
-  transform: translateY(6px);
-}
+  
 
 
-/* Contador (caso exista) */
-.counter {
-  position: fixed;
-  top: 150px;
-  right: 30px;
-  font-size: 3rem;
-}
 
-/* Estilo dos containers de bolhas */
-.bubble-container {
-  width: 100%;
-  height: 100%;
-  position: relative; /* Alterado para relative */
-  top: 0; /* Adicionado */
-  left: 0; /* Adicionado */
-  z-index: 1; /* Adicionado */
-}
 
-/* Estilo das bolhas */
-.bubble {
-  border: 1px solid #999;
-  border-radius: 50%;
-  position: absolute;
-  cursor: crosshair;
-  background-color: rgb(255 255 255 / 20%);
-  backdrop-filter: blur(4px);
 
-  @for $i from 1 through $bubbles {
-    &:nth-of-type(#{$i}) {
-      animation: 2.5s float ease-in-out infinite ($i * 0.2s);
-    }
-  }
-  &.burst {
-    animation: bubbleBurst 0.3s forwards;
-  }
-}
 
-/* Animação de explosão das bolhas */
-@keyframes bubbleBurst {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
 
-/* Animação de flutuação das bolhas */
-@keyframes float {
-  50% {
-    transform: translateY(-6px);
-  }
-}
 
 /* Estilo do cabeçalho */
 header {
