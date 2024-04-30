@@ -59,20 +59,21 @@ button {
   &.burst {
     animation: bubbleBurst 0.3s forwards;
   }
-}
 
-/* Botão de reset */
+/* Estilizar o botão reset */
 .reset {
   margin: 1rem auto; /* Centralizar horizontalmente */
   font-size: 1.25rem;
   text-transform: uppercase;
   border: 1px solid;
   box-shadow: #222 0px 8px 0px 0px;
-  &:active {
-    box-shadow: 0px 2px 0px 0px;
-    transform: translateY(6px);
-  }
+  cursor: pointer; /* Adicionado cursor pointer */
 }
+.reset:active {
+  box-shadow: 0px 2px 0px 0px;
+  transform: translateY(6px);
+}
+
 
 /* Animação de explosão das bolhas */
 @keyframes bubbleBurst {
