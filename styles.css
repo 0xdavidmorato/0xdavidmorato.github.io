@@ -135,23 +135,21 @@ header {
             font-family: "Helvetica Neue", Arial, sans-serif;
         }
         
-         .containers-wrapper {
-          display: grid;
-          flex-wrap: wrap; /* Permite que os containers se quebrem para a linha seguinte se não houver espaço suficiente */
-        }
-
+ 
         .container {
             position: relative;
             background-color: #ffffff;
             margin-top: 30px;
-            margin-bottom: 30px;
             padding: 20px;
             padding-top: 30px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-           flex: 1; /* Distribui o espaço igualmente entre os containers */
-            margin: 5px; /* Espaçamento entre os containers */
+            flex: 1; /* Distribui o espaço igualmente entre os containers */
+            margin: auto; /* Centralizar horizontalmente */
+            top: 50%; /* Centralizar verticalmente */
+            transform: translateY(-50%);
         }
+
 
         h1 {
             color: #086108;
