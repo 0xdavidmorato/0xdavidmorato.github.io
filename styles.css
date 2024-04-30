@@ -140,7 +140,7 @@ header {
                     border-radius: 10px;
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
                     flex: 5; /* Distribui o espaço igualmente entre os containers */
-                    
+                    margin-top: 5px; /* Espaçamento entre os containers */
                                        
                 }
       
