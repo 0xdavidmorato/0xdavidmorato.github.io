@@ -10,6 +10,8 @@ body {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  background-color: #f8f9fa;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 button {
@@ -80,3 +82,54 @@ button {
     transform: translateY(-6px);
   }
 }
+
+
+header {
+            background-color: #086108;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            width: 350px; /* Ajuste o tamanho do logotipo conforme necessário */
+        }
+      
+        .contact-method img {
+            width: 20px; /* Ajuste o tamanho do logotipo conforme necessário */
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff9900; /* Cor ao passar o mouse */
+        }
+        footer {
+            background-color: #086108;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+      
+        /* Adicione isso ao seu CSS para rolagem suave */
+        html {
+            scroll-behavior: smooth;
+        }
+      
+ 
