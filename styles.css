@@ -154,13 +154,13 @@ nav a:hover {
     color: #ff9900; /* Cor ao passar o mouse */
 }
 
-        footer {
-            margin-top: 20px; /* Adicione a margem superior desejada */
-            background-color: #086108;
-            padding: 20px;
-            text-align: center;
-            color: #fff;
-        }
+footer {
+    background: linear-gradient(to bottom, #ffffff, #086108); /* Define o degradê de branco para verde */
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
       
         /* Adicione isso ao seu CSS para rolagem suave */
         html {
