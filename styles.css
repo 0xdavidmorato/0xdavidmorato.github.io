@@ -116,6 +116,14 @@ nav li:last-child {
     margin-right: 0; /* Remove a margem direita do último item */
 }
 
+nav li:not(:last-child)::after {
+    content: '|';
+    margin-left: 10px; /* Espaçamento entre o caractere e o próximo item */
+    margin-right: 10px; /* Espaçamento entre o caractere e o item anterior */
+    color: #fff; /* Cor do caractere */
+}
+
+
 nav a {
     text-decoration: none;
     color: #fff;
