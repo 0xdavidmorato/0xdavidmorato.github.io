@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>0xDavidMorato - Desenvolvedor Web</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Arturo+Outline&display=swap" rel="stylesheet">
@@ -214,8 +215,9 @@
         <div class="logo">
             <img src="https://lh3.googleusercontent.com/pw/AP1GczOJ2KyotNTA_UPeuR_wcUsZXjknzu4zR87Y3Wv2k3bWk7Ua1K3pGfCXheEz2Q9IPkyuHw4kZKk-SK56VSyNko3N795F5lsHWcJYJ--U6Dyss7H3gw_3dUZTPHdzzd4IqvdQn8mF785yzVLWMU2U2A=w1150-h647-s-no-gm?authuser=1" alt="0xDavidMorato">
         </div>
-        <h6>&copy; 2024 0xDavidMorato. Todos os direitos reservados.</h6>
+        <h6>&copy; <span id="year"></span> 0xDavidMorato. Todos os direitos reservados.</h6>
     </footer>
+<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 <script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
