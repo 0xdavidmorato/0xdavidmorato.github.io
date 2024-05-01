@@ -119,6 +119,8 @@ nav li:last-child {
 nav a {
     text-decoration: none;
     color: #fff;
+    font-family: 'Lemonada', cursive; /* Aplica a fonte Lemonada */
+    font-size: 24px; /* Define o tamanho da fonte */
     position: relative; /* Para animação */
 }
 
