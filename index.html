@@ -1,342 +1,226 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DrinkDrips</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.0/web3.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-  </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0xDavidMorato - Desenvolvedor Web</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Arturo+Outline&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+    
 <body>
-    <div class="myHero">
-    <h1>Tanke o Token Drink &#x1F680</h1><h1>&#x1F4AD After Memecoin</h1>
-  </div>
-  <nav>
-    <div class="myLogo">Drink &#127864</div>
-    <ul>
-      <li><a href="https://drinkdrips.github.io/app">Acessar App</a></li>
-      <li><a href="#drink-info">Sobre</a></li>
-      <li><a href="#tokenomics">Tokenomics</a></li>
-      <li><a href="#roadmap">Roadmap</a></li>
-    </ul>
-  </nav>
+  <header id="top">
+        <!-- Logotipo -->
+        <div class="logo">
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczOJ2KyotNTA_UPeuR_wcUsZXjknzu4zR87Y3Wv2k3bWk7Ua1K3pGfCXheEz2Q9IPkyuHw4kZKk-SK56VSyNko3N795F5lsHWcJYJ--U6Dyss7H3gw_3dUZTPHdzzd4IqvdQn8mF785yzVLWMU2U2A=w1150-h647-s-no-gm?authuser=1" alt="0xDavidMorato">
+        </div>
+        
+        <!-- Menu de Navegação -->
+        <nav>
+            <ul>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#valores">Valores</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="container" id="comprar">  
-  <h2>Mais do que uma memecoin</h2>
-  <p>O Token Drink foi projetado como uma homenagem à uma bebida tradicional brasileira, por isso a quantidade total de tokens faz alusão a essa bebida, inserindo-se como uma possível forma de interação em eventos, festas, bares, baladas, afters e outros. Além disso, busca desmistificar a crença de que os tokens memes devem ter um número exorbitante de unidades em circulação. Ao contrário, o Drink desafia essa noção, oferecendo uma quantidade de tokens infinitamente menor do que as memecoins "da moda" oferecem.</p>
-
-</div>
-<div class="container">
- <!-- Informações sobre o token Drink -->
- <section id="drink-info">
- <h2>Sobre o Token</h2>
- <p>A Drink é um token sem valor intrínseco ou perspectiva de retorno financeiro. Não possui equipe formal, nenhuma responsabilide quanto a prazos, metas, evolução ou quaisquer espectativas relacionadas a investimento. O token é completamente inútil, destinado apenas para fins de entretenimento e especulação.</p>
-<p>Seu padrão é BEP-20 baseado no ERC-20, que é o padrão de token mais comum da rede Ethereum, mas optamos por construir na Binance Smart Chain.</p>
-<p>O token oferece funcionalidades básicas essenciais para os usuários, incluindo transferências de valor e possibilidade de utilização em protocolos DeFi.</p>
-</section>
-</div>
-<div class="container">
-          <!-- Seção Tokenomics -->
-              <section id="tokenomics">
-                <h2>Tokenomics</h2>
-                <p>Detalhes sobre o token:</p>
-                <ul>
-                  <li>Fornecimento total: 51.000.000 DRINK</li>
-                  <li>Fornecimento circulante: 51.000.000 DRINK</li>
-                  <li>Pré-venda para comunidade: 40.000.000 DRINK</li>
-                  <li>Reserva para possibilidade de listagens: 11.000.000 DRINK</li>
-                </ul>
-              </section>
-</div>
+    <div class="spacer"></div>
   
-  <div class="container">
-          <!-- Seção Detalhes Técnicos -->
-              <section id="detalhes-tecnicos">
-                <h2>Detalhes Técnicos</h2>
-                <p>Informações úteis:</p>
-                <ul>
-                  <li>Padrão Técnico: BEP-20</li>
-                  <li>Blockchain: Binance Smart Chain</li>
-                  <li>Explorador: https://bscscan.com/</li>
-                  <li>Contrato: 0x9759018e661Ff7B2e0cd2412F70043BcdB9Fb8C3</li>
-                </ul>
-              </section>
-</div>
-  
- 
-    <div class="containerRoadmap" id="roadmap">
-   <div class="d-flex justify-content-center align-items-center flex-column mb-4">
-      <h1 class="mb-2 text-white text-center">Roadmap</h1>
-      
-      <p class="w-75 text-white text-center">Salve comunidade! Estamos felizes em compartilhar com vocês nosso roadmap que traça a jornada rumo ao lançamento do token Drink. É importante destacar que o Drink é uma memecoin de expressão divertida e irônica mas que não possui qualquer valor intrínseco ou perspectiva de retorno financeiro. Portanto, convidamos vocês a embarcarem nesta jornada, conscientes e com os pés no chão. Jamais coloque o sustento da sua família em risco! </p>
-   </div>
+    
+<div class="containers-wrapper">
+      <div id="top1" class="container-button">
+        <button type="button" class="reset">Reset</button>
+        <div class="counter">0</div>
+          <div class="bubble-container"></div>
+      </div>
 
-   <main id="infographic" class="d-flex flex-column align-items-center py-5">
-      <section class="step one text-danger">
-         <div class="roadmapCircle">
-            <i class="fas fa-glass-martini-alt fa-5x"></i>
-            <h4>Fase 1</h4>Preparação
-         </div>
-         <article data-step="1">
-            <header class="d-flex align-items-center bg-danger bg-opacity-10">
-               <i class="fas fa-glass-martini-alt bg-danger"></i>
-               <h6 class="text-uppercase my-3 ps-4">Concepção da Ideia</h6>
-            </header>
-
-            <div class="roadmapBody">
-               <small> Surgimento da ideia de criar a memecoin "Drink".</small>
-
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-danger invisible" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-danger" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-         <article data-step="2">
-            <header class="d-flex align-items-center text-danger bg-danger bg-opacity-10">
-               <i class="fas fa-glass-martini-alt bg-danger"></i>
-               <h6 class="text-uppercase my-3 ps-4">Pesquisa Inicial</h6>
-            </header>
-
-            <div class="roadmapBody">
-               <small> Pesquisa preliminar sobre tokens na Binance Smart Chain (BNB Chain)</small>
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-danger" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-danger" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-         <article data-step="3">
-            <header class="d-flex align-items-center text-danger bg-danger bg-opacity-10">
-               <i class="fas fa-glass-martini-alt bg-danger"></i>
-               <h6 class="text-uppercase my-3 ps-4">Definição de Objetivos</h6>
-            </header>
-
-            <div class="roadmapBody">
-               <small> Identificação dos objetivos do projeto e do público-alvo. </small>
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-danger" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-danger" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-         <article data-step="4">
-            <header class="d-flex align-items-center text-danger bg-danger bg-opacity-10">
-               <i class="fas fa-glass-martini-alt bg-danger"></i>
-               <h6 class="text-uppercase my-3 ps-4">Escolha do Padrão de Token</h6>
-            </header>
-
-            <div class="roadmapBody">
-               <small> Decisão de usar o padrão BEP-20 para a memecoin. </small>
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-danger" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-danger" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-         <article data-step="5">
-            <header class="d-flex align-items-center text-danger bg-danger bg-opacity-10">
-               <i class="fas fa-glass-martini-alt bg-danger"></i>
-               <h6 class="text-uppercase my-3 ps-4">Início do Desenvolvimento</h6>
-            </header>
-
-            <div class="roadmapBody">
-               <small> Início do processo de desenvolvimento do contrato inteligente na Binance Smart Chain. </small>
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-danger" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-danger" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-      </section>
-      <section class="step two text-warning">
-         <div class="roadmapCircle">
-            <i class="fas fa-laptop-code fa-5x"></i>
-            <h4>FASE 2.</h4>Desenvolvimento e Lançamento!
-         </div>
-         <article data-step="6">
-            <header class="d-flex align-items-center text-warning bg-warning bg-opacity-10">
-               <i class="fas fa-laptop-code bg-warning"></i>
-               <h6 class="text-uppercase my-3 pe-4">Desenvolvimento do Contrato Inteligente</h6>
-            </header>
-
-            <div class="roadmapBody">
-               <small> Desenvolvimento e compilação do contrato inteligente na Bnb Chain. </small>
-
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-warning" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-warning" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-         <article data-step="7">
-            <header class="d-flex align-items-center text-warning bg-warning bg-opacity-10">
-               <i class="fas fa-laptop-code bg-warning"></i>
-               <h6 class="text-uppercase my-3 pe-4">Mintagem dos Tokens</h6>
-            </header>
-
-            <div class="roadmapBody">
-               <small> Mintagem inicial de todos os tokens, totalizando 51 milhões de unidades. </small>
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-warning" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-warning" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-         <article data-step="8">
-            <header class="d-flex align-items-center text-warning bg-warning bg-opacity-10">
-               <i class="fas fa-laptop-code bg-warning"></i>
-               <h6 class="text-uppercase my-3 pe-4">Desenvolvimento do Site</h6>
-            </header>
-
-            <div class="roadmapBody">
-               <small> Criação e design do site do token Drink. </small>
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-warning" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-warning" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-         <article data-step="9">
-            <header class="d-flex align-items-center text-warning bg-warning bg-opacity-10">
-               <i class="fas fa-laptop-code bg-warning"></i>
-               <h6 class="text-uppercase my-3 pe-4">Redação do White Paper</h6>
-            </header>
-
-            <div class="roadmapBody">
-               <small> Elaboração do conteúdo do white paper, abordando a visão, tecnologia e economia. </small>
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-warning" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-warning" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-         <article data-step="10">
-            <header class="d-flex align-items-center text-warning bg-warning bg-opacity-10">
-               <i class="fas fa-laptop-code bg-warning"></i>
-               <h6 class="text-uppercase my-3 pe-4">Testes e Revisões</h6>
-            </header>
-
-            <div class="roadmapBody">
-               <small> Testes finais do contrato inteligente, do site e revisão do white paper. </small>
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-warning" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-warning" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-      </section>
-      <section class="step three text-success">
-         <div class="roadmapCircle">
-            <i class="fas fa-glass-cheers fa-5x"></i>
-            <h4>FASE 3.</h4>Lançamento e Expansão!
-         </div>
-         <article data-step="11">
-            <header class="d-flex align-items-center text-success bg-success bg-opacity-10">
-               <i class="fas fa-glass-cheers bg-success"></i>
-               <h6 class="text-uppercase my-3 ps-4">Lançamento do Site e White Paper</h6>
-            </header>
-
-            <div class="roadmapBody">
-               <small> Publicação do site do token Drink e lançamento do white paper. </small>
-
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-success" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-success" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-         <article data-step="12">
-            <header class="d-flex align-items-center text-success bg-success bg-opacity-10">
-               <i class="fas fa-glass-cheers bg-success"></i>
-               <h6 class="text-uppercase my-3 ps-4">Distribuição Inicial</h6>
-            </header>
-
-            <div class="roadmapBody">
-               <small> Distribuição dos tokens entre as carteiras de desenvolvedores e reserva. </small>
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-success" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-success" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-         <article data-step="13">
-            <header class="d-flex align-items-center text-success bg-success bg-opacity-10">
-               <i class="fas fa-glass-cheers bg-success"></i>
-               <h6 class="text-uppercase my-3 ps-4">Parcerias e Integrações</h6>
-            </header>
-
-            <div class="roadmapBody">
-               <small> Integração do token Drink em exchanges e carteiras parceiras. </small>
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-success" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-success" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-         <article data-step="14">
-            <header class="d-flex align-items-center text-success bg-success bg-opacity-10">
-               <i class="fas fa-glass-cheers bg-success"></i>
-               <h6 class="text-uppercase my-3 ps-4">Divulgação e Marketing</h6>
-            </header>
-
-            <div class="roadmapBody">
-               <small> Campanhas de marketing para promover o lançamento e o white paper. </small>
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-success" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-success" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-         <article data-step="15">
-            <header class="d-flex align-items-center text-success bg-success bg-opacity-10">
-               <i class="fas fa-glass-cheers bg-success"></i>
-               <h6 class="text-uppercase my-3 ps-4">Acompanhamento e Feedback</h6>
-            </header>
-
-            <div class="roadmapBody">
-               <small> Monitoramento do desempenho pós-lançamento e coleta de feedback da comunidade. </small>
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-success" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-success" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-         <article data-step="16">
-            <header class="d-flex align-items-center text-success bg-success bg-opacity-10">
-               <i class="fas fa-flag-checkered fa-5x"></i>
-               <h6 class="text-uppercase my-3 ps-4"> Go to the Moon 🚀</h6>
-            </header>
-
-            <h6 class="text-uppercase my-3 ps-4"></h6>
-            <div class="roadmapBody">
-               <small> Missão Cumprida!
-Celebração do sucesso do projeto e da jornada até a Lua, sem perder de vista novas conquistas a serem alcançadas. </small>
-               <div class="d-flex justify-content-between mt-3 controls">
-                  <a class="roadmapBtn roadmapBtn-outline-success" href="#">Prev</a>
-                  <a class="roadmapBtn roadmapBtn-outline-success invisible" href="#">Next</a>
-               </div>
-            </div>
-         </article>
-      </section>
-     <p>&#127926 &#128520 &#127925</p>
-   </main>
-</div>
-
-  <!-- Adicione o rodapé -->
-  <footer>
-    <div class="logoRodape">
-      <!-- Insira o logotipo da sua empresa aqui -->
-      <img src="https://lh3.googleusercontent.com/pw/AP1GczPYBu_sgsFmmj8AIRKOG6ZL06yEPdLaZ5c4iuo_XmFmuaf1Ya5VkyS0_gnvisgQUSfSBOh24UEsHm30UMLQgQoDo83OkeDl3Y2FpdHRgmzOJWjvDIhRLvHIkxTiStfKCaTFyKoetP7PLCtw_8GeBA=w1648-h927-s-no-gm?authuser=1" alt="DrinkDrips">
+    <div id="bem-vindos" class="container animated">
+        <h1>Bem vindos!</h1>
+            <p>Meu nome é David, sou Desenvolvedor Web Frontend, também presto serviços de assistência técnica para computadores e notebooks. Realizo trabalhos freelancer em design gráfico e desenvolvimento de landing pages e websites.</p>
+            <p>Aqui você encontrará uma variedade de serviços que refletem minha dedicação ao que faço e é também uma forma de divulgar meu trabalho.</p>
+            <p>Se você precisar de algum dos serviços listados nessa página, estou a disposição para conversarmos. <i class="fa fa-smile-o" aria-hidden="true"></i></p>
+            <p>Criei esse pequeno passatempo das bolhas na página para que vocês possam interagir com algo além de textos rrs.</p>    
     </div>
-    <h6>&copy; <span id="year"></span> DrinkDrips. Todos os direitos reservados.</h6>
-  </footer>
-  <!-- Adicione os scripts JavaScript necessários -->
-  <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>.
-  <script src="roadmap.js"></script>
+
+<div id="servicos" class="container animated">
+<h2><i class="fa fa-code"></i> Desenvolvimento Frontend</h2>
+<ul>
+    <li>Criação e desenvolvimento de interfaces de usuário usando HTML, CSS e JavaScript.</li>
+    <li>Implementação de designs responsivos para garantir uma experiência consistente em diferentes dispositivos e tamanhos de tela.</li>
+    <li>Integração de frameworks e bibliotecas frontend como React.js, Angular.js ou Vue.js.</li>
+</ul>
+
+<h2><i class="fa fa-code-fork"></i> Controle de Versão</h2>
+<ul>
+    <li>Utilização de sistemas de controle de versão como Git para rastrear e gerenciar alterações no código-fonte.</li>
+    <li>Colaboração com outros desenvolvedores por meio de repositórios compartilhados.</li>
+</ul>
+     
+
+<h2><i class="fa fa-cogs"></i> Hardware</h2>
+      
+    <ul>
+            <li>Substituição de Placa-Mãe</li>
+            <li>Upgrade de Memória RAM</li>
+            <li>Substituição de Disco Rígido (HDD/SSD)</li>
+            <li>Limpeza Interna e Troca de Pasta Térmica</li>
+            <li>Substituição de Fonte de Alimentação</li>
+            <li>Atualização de Placa de Vídeo (GPU)</li>
+            <li>Instalação de Unidade de DVD/Blu-ray</li>
+            <li>Substituição de Teclado ou Mouse</li>
+            <li>Troca de Monitor ou Tela</li>
+            <li>Reparo de Conexões e Cabos</li>
+        <!-- Adicione outros serviços relacionados, se houver -->
+    </ul>
+        
+    <h2><i class="fa fa-cogs"></i> Software</h2>
+    <ul>
+            <li>Remoção de Vírus e Malware</li>
+            <li>Atualização de Sistema Operacional</li>
+            <li>Instalação e Atualização de Antivírus</li>
+            <li>Resolução de Problemas de Inicialização</li>
+            <li>Configuração de Rede e Wi-Fi</li>
+            <li>Otimização de Desempenho</li>
+            <li>Backup de Dados e Configurações</li>
+            <li>Recuperação de Dados Perdidos</li>
+            <li>Instalação de Software e Aplicativos</li>
+            <li>Configuração de Segurança e Firewall</li>
+    </ul>
+        
+    <h2><i class="fa fa-cubes"></i> Designer Gráfico</h2>
+    <ul>
+            <li>Criação de Logotipos</li>
+            <li>Design de Cartões de Visita</li>
+            <li>Desenvolvimento de Banners e Anúncios</li>
+            <li>Criação de Posts para Mídias Sociais</li>
+            <li>Elaboração de Infográficos</li>
+            <li>Design de Panfletos e Folhetos</li>
+            <li>Produção de Apresentações de Slides</li>
+            <li>Design de Capas para Redes Sociais</li>
+            <li>Criação de Convites e Cartões</li>
+            <li>Layout de Blog e Redes Sociais</li>
+            <li>Criação de Posts de Blog</li>
+            <li>Design de Cartazes</li>
+            <li>Produção de E-books e Guia de Estudos</li>
+            <li>Criação de Artigos e Posts de Blog</li>
+            <li>Design de Gráficos para Relatórios</li>
+            <li>Ilustrações e Arte Vetorial</li>
+            <li>Edição de Imagens e Fotos</li>
+            <li>Criação de E-mail Marketing</li>
+            <li>Design de Capas de Livros e E-books</li>
+            <li>Personalização de Modelos de Apresentações</li>
+    </ul>
+      <a class="back-to-top" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+   </div>
+    
+    <div id="valores" class="container animated">
+    <h1 style="text-align: center;">Dúvidas sobre valores:<h1><br>
+    <h2>Estimativa de Custos para Desenvolvimento Web</h2>
+    <p>O custo médio estimado para os serviços de desenvolvimento web varia de acordo com as necessidades do projeto. Abaixo estão os preços estimados para diferentes serviços:</p>
+    
+    <h3>Desenvolvimento Frontend</h3>
+    <ul>
+        <li>Desenvolvimento de interfaces de usuário usando HTML, CSS e JavaScript: <b>R$ 300,00</b> por página</li>
+        <li>Implementação de designs responsivos: <b>R$ 100,00</b> por página adicional</li>
+        <li>Integração de frameworks e bibliotecas frontend:</li>
+        <ul>
+            <li>React.js: <b>R$ 500,00</b></li>
+            <li>Angular.js: <b>R$ 400,00</b></li>
+            <li>Vue.js: <b>R$ 450,00</b></li>
+        </ul>
+    </ul>
+    
+    <h3>Controle de Versão</h3>
+    <ul>
+        <li>Utilização de sistemas de controle de versão como Git: <b>R$ 200,00</b> por projeto</li>
+        <li>Colaboração com outros desenvolvedores por meio de repositórios compartilhados: Incluso no preço do controle de versão</li>
+    </ul>
+    
+    <p>Esses preços são estimativas e podem variar dependendo da complexidade do projeto e dos requisitos específicos. Para obter um orçamento preciso, entre em contato conosco com os detalhes do seu projeto.</p>
+
+        
+    <h2>Quanto custa para consertar meu computador?</h2><br>
+      <p>O custo médio estimado é de aproximadamente <b>R$ 500,00</b>, mas pode variar de acordo com os serviços executados, tais como:</p>
+    <ul>
+            <li>Backup</li>
+            <li>Formatação</li>
+            <li>Remoção de Vírus</li>
+            <li>Troca de Peças</li>
+            <li>Hardware do Computador</li>
+    </ul>
+
+    <p>Ao solicitar seu orçamento, seja detalhista ao descrever o que ocorre com o computador e, principalmente, as especificações (marca, modelo, sistema operacional, tempo de uso, etc).</p>
+    <p>Estamos aqui para ajudá-lo com seus problemas de informática e garantir que seu dispositivo funcione da melhor forma possível.</p>
+
+    <h2>Formatação e Backup</h2>
+    <p>De acordo com o reparo, poderá ser necessário realizar a formatação do computador e, consequentemente, antes da formatação, é imprescindível realizar o backup para evitar a perda de arquivos importantes. Ambos os serviços são cobrados à parte, sendo:</p>
+    <ul>
+        <li>Backup (cópia dos documentos e arquivos que estão no computador): R$ 40,00 por GB</li>
+        <li>Formatação (Reinstalação completa do sistema operacional): R$ 250,00</li>
+    </ul>
+    <p>Também é importante observar que se o diagnóstico for realizado a domicílio, será cobrada uma taxa de deslocamento de acordo com a distância.</p>
+
+    <h2>Designer gráfico e criativos</h2>
+      <ul>
+    <li>Logotipos personalizados: <b>R$ 250,00</b>.</li>
+    <li>Imagens avulsas: <b>R$ 80,00</b> por imagem. 
+    <li>Se você optar por um pacote de 10 imagens, o valor total é de <b>R$ 500,00</b>, tornando cada imagem apenas <b>R$ 50,00.</b></li>
+      </ul>
+    <p>Estou à disposição para discutir seus projetos e garantir que você obtenha ótimos resultados visuais que se encaixem no seu orçamento.</p>
+      <a class="back-to-top" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+</div>
+
+<div class="container animated">
+    <h1 style="text-align: center;">Pagamento</h1>
+    <p>A forma de pagamento é simples e flexível. Para começarmos a trabalhar juntos, peço um sinal de R$ 50,00, para poder iniciar o trabalho e demonstrar seu compromisso. O restante do pagamento nós podemos acertar de acordo com o que for mais conveniente e justo para ambos. Podemos discutir opções de pagamento que se adequem às suas necessidades e garantir que o trabalho seja o mais transparente e tranquilo possível. Minha prioridade é te atender e proporcionar o resultado esperado.</p>
+    <h2><i class="fa fa-credit-card"></i> Meios de pagamento</h2>
+    <ul>
+        <li>Dinheiro</li>
+        <li>Pix</li>
+        <li>Bitcoin (<i class="fa fa-btc"></i>)</li>
+        <!-- Adicione outras opções de pagamento, se necessário -->
+    </ul>
+  <a class="back-to-top" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+</div>
+    
+  <div class="container animated">
+    <h1>Contato</h1>
+    <p>Estou disponível para responder suas perguntas e ajudar com suas necessidades. Você pode entrar em contato comigo das seguintes maneiras:</p>
+    
+    <div id="contato" class="contact-method">
+        <h2>E-mail</h2>
+        <p>
+            <i class="fa fa-envelope-o"></i> <a href="mailto:0xdavidmorato@gmail.com"> 0xdavidmorato@gmail.com</a>
+        </p>
+      
+    </div>
+
+    <div class="contact-method">
+        <h2>WhatsApp</h2>
+        <p>
+            <i class="fa fa-whatsapp"></i> (11) 97320-8881
+        </p>
+      
+    </div>
+    <a class="back-to-top" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+</div>
+        
+</div>
+<!-- Rodapé -->
+    <footer>
+        <div class="logo">
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczOJ2KyotNTA_UPeuR_wcUsZXjknzu4zR87Y3Wv2k3bWk7Ua1K3pGfCXheEz2Q9IPkyuHw4kZKk-SK56VSyNko3N795F5lsHWcJYJ--U6Dyss7H3gw_3dUZTPHdzzd4IqvdQn8mF785yzVLWMU2U2A=w1150-h647-s-no-gm?authuser=1" alt="0xDavidMorato">
+        </div>
+        <h6>&copy; <span id="year"></span> 0xDavidMorato. Todos os direitos reservados.</h6>
+    </footer>
+<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
