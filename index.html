@@ -1,225 +1,401 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0xDavidMorato - Desenvolvedor Web</title>
+    <title>David Morato</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Arturo+Outline&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-    
 <body>
-  <header id="top">
-        <!-- Logotipo -->
-        <div class="logo">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczOJ2KyotNTA_UPeuR_wcUsZXjknzu4zR87Y3Wv2k3bWk7Ua1K3pGfCXheEz2Q9IPkyuHw4kZKk-SK56VSyNko3N795F5lsHWcJYJ--U6Dyss7H3gw_3dUZTPHdzzd4IqvdQn8mF785yzVLWMU2U2A=w1150-h647-s-no-gm?authuser=1" alt="0xDavidMorato">
+    <section>
+      <div class="icon-container">
+        <div class="icon-box about" data-modal="about">
+          <i class="fa-regular fa-address-card"></i>
         </div>
-        
-        <!-- Menu de Navegação -->
-        <nav>
-            <ul>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#valores">Valores</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="spacer"></div>
-  
-    
-<div class="containers-wrapper">
-      <div id="top1" class="container-button">
-        <button type="button" class="reset">Bem Vindos</button>
-        <!-- <div class="counter">0</div> -->
-          <div class="bubble-container"></div>
+        <div class="icon-box projects" data-modal="projects">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div class="icon-box testimonial" data-modal="testimonial">
+          <i class="fa-solid fa-users-rectangle"></i>
+        </div>
+        <div class="icon-box contact" data-modal="contact">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
       </div>
+    </section>
 
-    <div id="bem-vindos" class="container animated">
-       <!-- <h1>Bem vindos!</h1> -->
-            <p>Olá, meu nome é David, sou um profissional independente recém-chegado em Portugal. Presto serviços nas áreas de desenvolvedor Web Frontend, SEO, gestão de tráfego online, assistência técnica para computadores e administração de redes. Também realizo trabalhos freelancer em design gráfico e desenvolvimento de landing pages e websites.</p>
-            <p>Aqui você encontrará uma variedade de serviços que refletem minha dedicação ao que faço e é também uma forma de divulgar meu trabalho.</p>
-            <p>Se você precisar de algum dos serviços listados nessa página, estou a disposição para conversarmos. <i class="fa fa-smile-o" aria-hidden="true"></i></p>
+    <div class="popup" id="about">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body about-container">
+          <div class="img-frame">
+            <img
+              src="https://raw.githubusercontent.com/0xdavidmorato/0xdavidmorato.github.io/main/David.jpg"
+              alt="" />
+          </div>
+          <div class="hero-content">
+            <h1>David Morato</h1>
+            <p>
+              Sou um profissional independente formado em Tecnologia em Analise e Desenvolvimento de sistemas. Especializado em serviços de rede, informática e desenvolvimento web front-end e back-end. Me dedico a criar soluções visualmente atraentes e fáceis de usar. Estou sempre aberto a usar novos conjuntos de habilidades e acredito no poder da colaboração. Gosto de trabalhar em conjunto com designers, desenvolvedores e profissionais competentes para oferecer soluções coesas e eficazes.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
-<div id="servicos" class="container animated">
-<h2><i class="fa fa-code"></i> Desenvolvimento Frontend</h2>
+    <div class="popup" id="projects">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="popup-body">
+          <div class="skill-list">
+            <h1>Skills</h1>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Javascript</li>
+              <li>React</li>
+              <li>Vue JS</li>
+              <li>Bootstrap</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+
+          <div class="project-container">
+            <h1>Projects</h1>
+            <div class="all-projects">
+              <div class="project-box">
+                <img
+                  src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/0c183f3d-cc94-4ed9-afea-4d33740dbf40"
+                  alt="" />
+                <div class="overlay">
+                  <h3>Adventure Landing Page</h3>
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/08c8b66f-7e24-42d9-848d-23e30f7e1968"
+                  alt="" />
+                <div class="overlay">
+                  <h3>Landing Page Template</h3>
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/d6e74bee-a0f6-416e-98cc-b0985caf507f"
+                  alt="" />
+                <div class="overlay">
+                  <h3>Travel Landing Page</h3>
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/28946a23-30af-4b36-b30b-e4a3e696aaf6"
+                  alt="" />
+                <div class="overlay">
+                  <h3>Plant Search App</h3>
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+    <!-- DASHBOARD DÚVIDAS E VALORES -->
+          <h1 style="text-align: center;">Dúvidas sobre valores:<h1><br>
+          <h2>Estimativa de Custos para Desenvolvimento Web</h2>
+          <p>O custo médio estimado para os serviços de desenvolvimento web varia de acordo com as necessidades do projeto. Abaixo estão os preços estimados para diferentes serviços:</p>
+          
+          <h3>Desenvolvimento Frontend</h3>
+          <ul>
+              <li>Desenvolvimento de interfaces de usuário usando HTML, CSS e JavaScript: <b>52,00€</b> por página</li>
+              <li>Implementação de designs responsivos: <b>18,00€</b></li>
+              <li>Integração de frameworks e bibliotecas frontend:</li>
+              <ul>
+                  <li>React.js: <b>85,00€</b></li>
+                  <li>Angular.js: <b>70,00€</b></li>
+                  <li>Vue.js: <b>75,00€</b></li>
+              </ul>
+          </ul>
+          
+          <h3>Controle de Versão</h3>
+          <ul>
+              <li>Utilização de sistemas de controle de versão como Git: <b>35,00€</b> por projeto</li>
+              <li>Colaboração com outros desenvolvedores por meio de repositórios compartilhados: Incluso no preço do controle de versão</li>
+          </ul>
+          
+          <p>Esses preços são estimativas e podem variar dependendo da complexidade do projeto e dos requisitos específicos. Para obter um orçamento preciso, entre em contato conosco com os detalhes do seu projeto.</p>
+
+              
+          <h2>Quanto custa para consertar meu computador?</h2><br>
+            <p>O custo médio estimado é de aproximadamente <b>85,00€</b>, mas pode variar de acordo com os serviços executados, tais como:</p>
+          <ul>
+                  <li>Backup</li>
+                  <li>Formatação</li>
+                  <li>Remoção de Vírus</li>
+                  <li>Troca de Peças</li>
+                  <li>Hardware do Computador</li>
+          </ul>
+
+          <p>Ao solicitar seu orçamento, seja detalhista ao descrever o que ocorre com o computador e, principalmente, as especificações (marca, modelo, sistema operacional, tempo de uso, etc).</p>
+          <p>Estamos aqui para ajudá-lo com seus problemas de informática e garantir que seu dispositivo funcione da melhor forma possível.</p>
+
+          <h2>Formatação e Backup</h2>
+          <p>De acordo com o reparo, poderá ser necessário realizar a formatação do computador e, consequentemente, antes da formatação, é imprescindível realizar o backup para evitar a perda de arquivos importantes. Ambos os serviços são cobrados à parte, sendo:</p>
+          <ul>
+              <li>Backup (cópia dos documentos e arquivos que estão no computador): 7,00€ por GB</li>
+              <li>Formatação (Reinstalação completa do sistema operacional): 43,00€</li>
+          </ul>
+          <p>Também é importante observar que se o diagnóstico for realizado a domicílio, será cobrada uma taxa de deslocamento de acordo com a distância.</p>
+
+          <h2>Designer gráfico e criativos</h2>
+            <ul>
+          <li>Logotipos personalizados: <b>43,00€</b>.</li>
+          <li>Imagens avulsas: <b>14,00€</b> por imagem. 
+          <li>Se você optar por um pacote de 10 imagens, o valor total é de <b>85,00€</b>, tornando cada imagem apenas <b>8,50€</b></li>
+            </ul>
+          <p>Estou à disposição para discutir seus projetos e garantir que você obtenha ótimos resultados visuais que se encaixem no seu orçamento.</p>
+
+              <h1 style="text-align: center;">Pagamento</h1>
+              <p>A forma de pagamento é simples e flexível. Para começarmos a trabalhar juntos, peço um sinal de 20,00€, para poder iniciar o trabalho e demonstrar seu compromisso. O restante do pagamento nós podemos acertar de acordo com o que for mais conveniente e justo para ambos. Podemos discutir opções de pagamento que se adequem às suas necessidades e garantir que o trabalho seja o mais transparente e tranquilo possível. Minha prioridade é te atender e proporcionar o resultado esperado.</p>
+              <h2><i class="fa fa-credit-card"></i> Meios de pagamento</h2>
+              <ul>
+                  <li>Dinheiro</li>
+                  <li>Transferência pela Wise</li>
+                  <li>Bitcoin (<i class="fa fa-btc"></i>)</li>
+                  <!-- Adicione outras opções de pagamento, se necessário -->
+              </ul>
+     
+  <!-- FIM DASHBOARD DÚVIDAS E VALORES -->
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="testimonial">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body testimonial-container">
+          <h1>Serviços</h1>
+
+          <div class="slider-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="user-info">
+                    
+                    <h2><i class="fa fa-code"></i> Desenvolvimento Frontend</h2>
+                  </div>
+                  
 <ul>
     <li>Criação e desenvolvimento de interfaces de usuário usando HTML, CSS e JavaScript.</li>
     <li>Implementação de designs responsivos para garantir uma experiência consistente em diferentes dispositivos e tamanhos de tela.</li>
     <li>Integração de frameworks e bibliotecas frontend como React.js, Angular.js ou Vue.js.</li>
 </ul>
 
-<h2><i class="fa fa-code-fork"></i> Controle de Versão</h2>
-<ul>
-    <li>Utilização de sistemas de controle de versão como Git para rastrear e gerenciar alterações no código-fonte.</li>
-    <li>Colaboração com outros desenvolvedores por meio de repositórios compartilhados.</li>
-</ul>
-     
 
-<h2><i class="fa fa-cogs"></i> Hardware</h2>
-      
-    <ul>
-            <li>Substituição de Placa-Mãe</li>
-            <li>Upgrade de Memória RAM</li>
-            <li>Substituição de Disco Rígido (HDD/SSD)</li>
-            <li>Limpeza Interna e Troca de Pasta Térmica</li>
-            <li>Substituição de Fonte de Alimentação</li>
-            <li>Atualização de Placa de Vídeo (GPU)</li>
-            <li>Instalação de Unidade de DVD/Blu-ray</li>
-            <li>Substituição de Teclado ou Mouse</li>
-            <li>Troca de Monitor ou Tela</li>
-            <li>Reparo de Conexões e Cabos</li>
-        <!-- Adicione outros serviços relacionados, se houver -->
-    </ul>
-        
-    <h2><i class="fa fa-cogs"></i> Software</h2>
-    <ul>
-            <li>Remoção de Vírus e Malware</li>
-            <li>Atualização de Sistema Operacional</li>
-            <li>Instalação e Atualização de Antivírus</li>
-            <li>Resolução de Problemas de Inicialização</li>
-            <li>Configuração de Rede e Wi-Fi</li>
-            <li>Otimização de Desempenho</li>
-            <li>Backup de Dados e Configurações</li>
-            <li>Recuperação de Dados Perdidos</li>
-            <li>Instalação de Software e Aplicativos</li>
-            <li>Configuração de Segurança e Firewall</li>
-    </ul>
-        
-    <h2><i class="fa fa-cubes"></i> Designer Gráfico</h2>
-    <ul>
-            <li>Criação de Logotipos</li>
-            <li>Design de Cartões de Visita</li>
-            <li>Desenvolvimento de Banners e Anúncios</li>
-            <li>Criação de Posts para Mídias Sociais</li>
-            <li>Elaboração de Infográficos</li>
-            <li>Design de Panfletos e Folhetos</li>
-            <li>Produção de Apresentações de Slides</li>
-            <li>Design de Capas para Redes Sociais</li>
-            <li>Criação de Convites e Cartões</li>
-            <li>Layout de Blog e Redes Sociais</li>
-            <li>Criação de Posts de Blog</li>
-            <li>Design de Cartazes</li>
-            <li>Produção de E-books e Guia de Estudos</li>
-            <li>Criação de Artigos e Posts de Blog</li>
-            <li>Design de Gráficos para Relatórios</li>
-            <li>Ilustrações e Arte Vetorial</li>
-            <li>Edição de Imagens e Fotos</li>
-            <li>Criação de E-mail Marketing</li>
-            <li>Design de Capas de Livros e E-books</li>
-            <li>Personalização de Modelos de Apresentações</li>
-    </ul>
-      <a class="back-to-top" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-   </div>
-    
-    <div id="valores" class="container animated">
-    <h1 style="text-align: center;">Dúvidas sobre valores:<h1><br>
-    <h2>Estimativa de Custos para Desenvolvimento Web</h2>
-    <p>O custo médio estimado para os serviços de desenvolvimento web varia de acordo com as necessidades do projeto. Abaixo estão os preços estimados para diferentes serviços:</p>
-    
-    <h3>Desenvolvimento Frontend</h3>
-    <ul>
-        <li>Desenvolvimento de interfaces de usuário usando HTML, CSS e JavaScript: <b>52,00€</b> por página</li>
-        <li>Implementação de designs responsivos: <b>18,00€</b></li>
-        <li>Integração de frameworks e bibliotecas frontend:</li>
-        <ul>
-            <li>React.js: <b>85,00€</b></li>
-            <li>Angular.js: <b>70,00€</b></li>
-            <li>Vue.js: <b>75,00€</b></li>
-        </ul>
-    </ul>
-    
-    <h3>Controle de Versão</h3>
-    <ul>
-        <li>Utilização de sistemas de controle de versão como Git: <b>35,00€</b> por projeto</li>
-        <li>Colaboração com outros desenvolvedores por meio de repositórios compartilhados: Incluso no preço do controle de versão</li>
-    </ul>
-    
-    <p>Esses preços são estimativas e podem variar dependendo da complexidade do projeto e dos requisitos específicos. Para obter um orçamento preciso, entre em contato conosco com os detalhes do seu projeto.</p>
 
-        
-    <h2>Quanto custa para consertar meu computador?</h2><br>
-      <p>O custo médio estimado é de aproximadamente <b>85,00€</b>, mas pode variar de acordo com os serviços executados, tais como:</p>
-    <ul>
-            <li>Backup</li>
-            <li>Formatação</li>
-            <li>Remoção de Vírus</li>
-            <li>Troca de Peças</li>
-            <li>Hardware do Computador</li>
-    </ul>
+                </div>
 
-    <p>Ao solicitar seu orçamento, seja detalhista ao descrever o que ocorre com o computador e, principalmente, as especificações (marca, modelo, sistema operacional, tempo de uso, etc).</p>
-    <p>Estamos aqui para ajudá-lo com seus problemas de informática e garantir que seu dispositivo funcione da melhor forma possível.</p>
+                <div class="swiper-slide">
+                  <div class="user-info">
+                    <h2><i class="fa fa-code-fork"></i> Controle de Versão</h2>
+                  </div>
+                  <p>
+                    <ul>
+                        <li>Utilização de sistemas de controle de versão como Git para rastrear e gerenciar alterações no código-fonte.</li>
+                        <li>Colaboração com outros desenvolvedores por meio de repositórios compartilhados.</li>
+                    </ul>
+                  </p>
+                </div>
 
-    <h2>Formatação e Backup</h2>
-    <p>De acordo com o reparo, poderá ser necessário realizar a formatação do computador e, consequentemente, antes da formatação, é imprescindível realizar o backup para evitar a perda de arquivos importantes. Ambos os serviços são cobrados à parte, sendo:</p>
-    <ul>
-        <li>Backup (cópia dos documentos e arquivos que estão no computador): 7,00€ por GB</li>
-        <li>Formatação (Reinstalação completa do sistema operacional): 43,00€</li>
-    </ul>
-    <p>Também é importante observar que se o diagnóstico for realizado a domicílio, será cobrada uma taxa de deslocamento de acordo com a distância.</p>
+                <div class="swiper-slide">
+                  <div class="user-info">
+                    
+                    <h2><i class="fa fa-cogs"></i> Hardware</h2>
+                  </div>
+                  <p>
+                    <ul>
+                            <li>Substituição de Placa-Mãe</li>
+                            <li>Upgrade de Memória RAM</li>
+                            <li>Substituição de Disco Rígido (HDD/SSD)</li>
+                            <li>Limpeza Interna e Troca de Pasta Térmica</li>
+                            <li>Substituição de Fonte de Alimentação</li>
+                            <li>Atualização de Placa de Vídeo (GPU)</li>
+                            <li>Instalação de Unidade de DVD/Blu-ray</li>
+                            <li>Substituição de Teclado ou Mouse</li>
+                            <li>Troca de Monitor ou Tela</li>
+                            <li>Reparo de Conexões e Cabos</li>
+                        <!-- Adicione outros serviços relacionados, se houver -->
+                    </ul>
+                  </p>
+                </div>
 
-    <h2>Designer gráfico e criativos</h2>
-      <ul>
-    <li>Logotipos personalizados: <b>43,00€</b>.</li>
-    <li>Imagens avulsas: <b>14,00€</b> por imagem. 
-    <li>Se você optar por um pacote de 10 imagens, o valor total é de <b>85,00€</b>, tornando cada imagem apenas <b>8,50€</b></li>
-      </ul>
-    <p>Estou à disposição para discutir seus projetos e garantir que você obtenha ótimos resultados visuais que se encaixem no seu orçamento.</p>
-      <a class="back-to-top" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-</div>
+                <div class="swiper-slide">
+                  <div class="user-info">
+                    <h2><i class="fa fa-cogs"></i> Software</h2>
+                  </div>
+                  <p>
+                     <ul>
+                            <li>Remoção de Vírus e Malware</li>
+                            <li>Atualização de Sistema Operacional</li>
+                            <li>Instalação e Atualização de Antivírus</li>
+                            <li>Resolução de Problemas de Inicialização</li>
+                            <li>Configuração de Rede e Wi-Fi</li>
+                            <li>Otimização de Desempenho</li>
+                            <li>Backup de Dados e Configurações</li>
+                            <li>Recuperação de Dados Perdidos</li>
+                            <li>Instalação de Software e Aplicativos</li>
+                            <li>Configuração de Segurança e Firewall</li>
+                    </ul>
+                  </p>
+                </div>
 
-<div class="container animated">
-    <h1 style="text-align: center;">Pagamento</h1>
-    <p>A forma de pagamento é simples e flexível. Para começarmos a trabalhar juntos, peço um sinal de 20,00€, para poder iniciar o trabalho e demonstrar seu compromisso. O restante do pagamento nós podemos acertar de acordo com o que for mais conveniente e justo para ambos. Podemos discutir opções de pagamento que se adequem às suas necessidades e garantir que o trabalho seja o mais transparente e tranquilo possível. Minha prioridade é te atender e proporcionar o resultado esperado.</p>
-    <h2><i class="fa fa-credit-card"></i> Meios de pagamento</h2>
-    <ul>
-        <li>Dinheiro</li>
-        <li>Transferência pela Wise</li>
-        <li>Bitcoin (<i class="fa fa-btc"></i>)</li>
-        <!-- Adicione outras opções de pagamento, se necessário -->
-    </ul>
-  <a class="back-to-top" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-</div>
-    
-  <div class="container animated">
-    <h1>Contato</h1>
-    <p>Estou disponível para responder suas perguntas e ajudar com suas necessidades. Você pode entrar em contato comigo das seguintes maneiras:</p>
-    
-    <div id="contato" class="contact-method">
-        <h2>E-mail</h2>
-        <p>
-            <i class="fa fa-envelope-o"></i> <a href="mailto:0xdavidmorato@gmail.com"> 0xdavidmorato@gmail.com</a>
-        </p>
-      
-    </div>
-
-    <div class="contact-method">
-        <h2>WhatsApp</h2>
-        <p>
-            <i class="fa fa-whatsapp"></i> 913 730 230
-        </p>
-      
-    </div>
-    <a class="back-to-top" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-</div>
-        
-</div>
-<!-- Rodapé -->
-    <footer>
-        <div class="logo">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczOJ2KyotNTA_UPeuR_wcUsZXjknzu4zR87Y3Wv2k3bWk7Ua1K3pGfCXheEz2Q9IPkyuHw4kZKk-SK56VSyNko3N795F5lsHWcJYJ--U6Dyss7H3gw_3dUZTPHdzzd4IqvdQn8mF785yzVLWMU2U2A=w1150-h647-s-no-gm?authuser=1" alt="0xDavidMorato">
+                <div class="swiper-slide swiper-no-swiping">
+                  <div class="user-info">
+                    <h2><i class="fa fa-cubes"></i> Designer Gráfico</h2>
+                  </div>
+                  <p>
+                  <ul>
+                              <li>Criação de Logotipos</li>
+                              <li>Design de Cartões de Visita</li>
+                              <li>Desenvolvimento de Banners e Anúncios</li>
+                              <li>Criação de Posts para Mídias Sociais</li>
+                              <li>Elaboração de Infográficos</li>
+                              <li>Design de Panfletos e Folhetos</li>
+                              <li>Produção de Apresentações de Slides</li>
+                              <li>Design de Capas para Redes Sociais</li>
+                              <li>Criação de Convites e Cartões</li>
+                              <li>Layout de Blog e Redes Sociais</li>
+                              <li>Criação de Posts de Blog</li>
+                              <li>Design de Cartazes</li>
+                              <li>Produção de E-books e Guia de Estudos</li>
+                              <li>Criação de Artigos e Posts de Blog</li>
+                              <li>Design de Gráficos para Relatórios</li>
+                              <li>Ilustrações e Arte Vetorial</li>
+                              <li>Edição de Imagens e Fotos</li>
+                              <li>Criação de E-mail Marketing</li>
+                              <li>Design de Capas de Livros e E-books</li>
+                              <li>Personalização de Modelos de Apresentações</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <ul class="control" id="custom-control">
+                <li class="prev">
+                  <ion-icon class="arrow" name="caret-back-outline"></ion-icon>
+                </li>
+                <li class="next">
+                  <ion-icon
+                    class="arrow"
+                    name="caret-forward-outline"></ion-icon>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <h6>&copy; <span id="year"></span> 0xDavidMorato. Todos os direitos reservados.</h6>
-    </footer>
-<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
-<!-- <script src="script.js"></script> -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+      </div>
+    </div>
+
+<!-- DASHBOARD CONTATO -->
+    <div class="popup" id="contact">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body contact-container">
+          <h1>Contact</h1>
+          <p>Estou a disposição para esclarecer suas dúvidas. Você pode entrar em contato utilizando o formulário abaixo, ou se preferir, você pode entrar em contato comigo via e-mail.:</p>
+          <p><i class="fa fa-envelope-o"></i> <a href="mailto:0xdavidmorato@gmail.com"> 0xdavidmorato@gmail.com</a></p>
+          <form>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.." />
+
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your mail.." />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"></textarea>
+
+            <button class="submit-btn more-btn" type="submit">
+              <span>Submit <i class="fa-solid fa-paper-plane"></i></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  <!-- FIM DASHBOARD CONTATO -->
+  </body>
+  <script src="script.js"></script>
+  </html>
