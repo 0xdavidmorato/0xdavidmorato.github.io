@@ -518,6 +518,7 @@ body.prevent-background-scroll {
 .swiper-slide {
   flex: 0 0 auto; /* Garante que os slides não se estiquem */
   width: calc(100% - 32px); /* Considera as margens laterais */
+  height: calc(100% - 32px); /* Considera as margens */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   background: rgba(104, 104, 104, 0.5);
   color: #fff;
@@ -586,8 +587,7 @@ body.prevent-background-scroll {
   cursor: pointer;
   transform: scale(1);
   transition: all 0.4s ease-in;
-  z-index: 25;
-}
+ }
 
 .control li:hover {
   background: rgba(224, 198, 26, 0.8);
