@@ -588,6 +588,7 @@ body.prevent-background-scroll {
   cursor: pointer;
   transform: scale(1);
   transition: all 0.4s ease-in;
+  border: 2px solid red;
  }
 
 .control li:hover {
