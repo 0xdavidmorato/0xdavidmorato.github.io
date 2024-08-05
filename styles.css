@@ -511,10 +511,13 @@ body.prevent-background-scroll {
   padding: 5px 0;
 }
 
+.swiper-wrapper {
+  display: flex;
+}
+
 .swiper-slide {
   flex: 0 0 auto; /* Garante que os slides não se estiquem */
-  width: 60%;
-  min-width: 260px; /* Garante largura mínima */
+  width: calc(100% - 32px); /* Considera as margens laterais */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   background: rgba(104, 104, 104, 0.5);
   color: #fff;
@@ -571,7 +574,7 @@ body.prevent-background-scroll {
 }
 
 .control li {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   background: rgba(237, 223, 36, 0.8);
