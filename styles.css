@@ -502,13 +502,10 @@ body.prevent-background-scroll {
 }
 
 .swiper {
+  display: flex;
   width: 94%;
   height: 100%;
   padding: 5px 0;
-}
-
-.swiper-wrapper {
-  display: flex;
 }
 
 .swiper-slide {
