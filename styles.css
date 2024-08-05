@@ -513,6 +513,7 @@ body.prevent-background-scroll {
 
 .swiper-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .swiper-slide {
