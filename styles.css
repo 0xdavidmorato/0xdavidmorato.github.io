@@ -576,7 +576,7 @@ body.prevent-background-scroll {
 }
 
 .control li {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(237, 223, 36, 0.8);
