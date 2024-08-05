@@ -502,13 +502,18 @@ body.prevent-background-scroll {
 }
 
 .swiper {
-  display: flex;
   width: 94%;
   height: 100%;
   padding: 5px 0;
+  overflow-x: auto; /* Adiciona barra de rolagem horizontal se necessário */
+}
+
+.swiper-wrapper {
+  display: flex; /* Permite que os slides fiquem lado a lado */
 }
 
 .swiper-slide {
+  flex: 0 0 auto; /* Garante que os slides não se estiquem */
   width: 260px;
   height: 100%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
@@ -517,7 +522,7 @@ body.prevent-background-scroll {
   outline: 0 solid rgba(225, 193, 88, 0.8);
   border-radius: 15px;
   padding: 20px 30px;
-  margin-bottom: 16px;
+  margin-right: 16px; /* Espaçamento entre os slides */
   cursor: grab;
   user-select: none;
   transition: outline 0.3s linear;
