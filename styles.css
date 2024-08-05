@@ -493,6 +493,7 @@ body.prevent-background-scroll {
 }
 
 .slider-container {
+  display: grid;
   width: 100%;
   position: absolute;
   top: 60%;
