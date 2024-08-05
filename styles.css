@@ -182,8 +182,6 @@ body.prevent-background-scroll {
   color: #fff;
   z-index: 30;
   transition: all 0.5s ease-in-out;
-  overflow: hidden;
-  max-height: 90vh; /* Limita a altura máxima ao tamanho da tela */
 }
 
 .popup-header {
@@ -201,7 +199,6 @@ body.prevent-background-scroll {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 30px 50px;
-  max-height: calc(90vh - 60px); /* Espaço para o header do popup */
 }
 
 .popup.maximized .popup-body {
@@ -511,22 +508,16 @@ body.prevent-background-scroll {
   padding: 5px 0;
 }
 
-.swiper-wrapper {
-  display: flex;
-  align-items: center;
-}
-
 .swiper-slide {
-  flex: 0 0 auto; /* Garante que os slides não se estiquem */
-  width: calc(100% - 32px); /* Considera as margens laterais */
-  height: calc(100% - 32px); /* Considera as margens */
+  width: 260px;
+  height: 250px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   background: rgba(104, 104, 104, 0.5);
   color: #fff;
   outline: 0 solid rgba(225, 193, 88, 0.8);
   border-radius: 15px;
   padding: 20px 30px;
-  margin-right: 16px; /* Espaçamento entre os slides */
+  margin-bottom: 16px;
   cursor: grab;
   user-select: none;
   transition: outline 0.3s linear;
@@ -537,7 +528,7 @@ body.prevent-background-scroll {
 }
 
 .user-info {
-  display: flex !important;
+  display: flex;
   align-items: center;
   column-gap: 20px;
 }
@@ -573,8 +564,6 @@ body.prevent-background-scroll {
   list-style: none;
   gap: 6px;
   margin-top: 16px;
-  z-index: 10; /* Certifique-se de que os botões estão visíveis */
-  position: relative; /* Para garantir que os itens dentro do controle sejam posicionados corretamente */
 }
 
 .control li {
@@ -582,14 +571,14 @@ body.prevent-background-scroll {
   justify-content: center;
   align-items: center;
   background: rgba(237, 223, 36, 0.8);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), inset 0px 4px 4px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4),
+    inset 0px 4px 4px rgba(255, 255, 255, 0.2);
   padding: 10px;
   margin: 3px;
   border-radius: 50%;
   cursor: pointer;
   transform: scale(1);
   transition: all 0.4s ease-in;
-  border: 2px solid transparent; /* Remove o contorno vermelho ou ajuste conforme necessário */
 }
 
 .control li:hover {
