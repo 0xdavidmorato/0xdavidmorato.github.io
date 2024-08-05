@@ -493,7 +493,6 @@ body.prevent-background-scroll {
 }
 
 .slider-container {
-  display: grid;
   width: 100%;
   position: absolute;
   top: 60%;
@@ -506,6 +505,10 @@ body.prevent-background-scroll {
   width: 94%;
   height: 100%;
   padding: 5px 0;
+}
+
+.swiper-wrapper {
+  display: flex;
 }
 
 .swiper-slide {
@@ -653,7 +656,7 @@ input:-webkit-autofill:active {
 }
 
 .submit-btn span {
-  display: flex;
+  display: ;
   gap: 10px;
 }
 
