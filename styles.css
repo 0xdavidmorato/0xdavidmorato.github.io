@@ -512,13 +512,9 @@ body.prevent-background-scroll {
   overflow-x: hidden; /* Oculta o excesso de conteúdo */
 }
 
-.swiper-wrapper {
-  display: flex; /* Permite que os slides fiquem lado a lado */
-}
-
 .swiper-slide {
   flex: 0 0 auto; /* Garante que os slides não se estiquem */
-  width: 100%;
+  width: 80%;
   min-width: 260px; /* Garante largura mínima */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   background: rgba(104, 104, 104, 0.5);
