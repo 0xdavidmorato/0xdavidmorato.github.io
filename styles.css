@@ -107,7 +107,7 @@ section {
   );
 }
 
-.testimonial {
+.service {
   background-color: #f6c66e;
   background-image: linear-gradient(30deg, #f6c66e 0%, rgb(168, 78, 22) 100%);
 }
@@ -484,9 +484,9 @@ body.prevent-background-scroll {
 }
 
 /* ------------- */
-/* TESTIMONIALS */
+/* SERVICES */
 
-.testimonial-container h1 {
+.service-container h1 {
   text-align: center;
   margin-bottom: 40px;
   user-select: none;
