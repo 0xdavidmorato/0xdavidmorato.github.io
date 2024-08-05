@@ -183,7 +183,7 @@ body.prevent-background-scroll {
   z-index: 30;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
-  max-height: 100vh; /* Limita a altura máxima ao tamanho da tela */
+  max-height: 90vh; /* Limita a altura máxima ao tamanho da tela */
 }
 
 .popup-header {
@@ -201,7 +201,7 @@ body.prevent-background-scroll {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 30px 50px;
-  max-height: 70vh; /* Limita a altura do conteúdo para evitar overflow */
+  max-height: calc(90vh - 60px); /* Espaço para o header do popup */
 }
 
 .popup.maximized .popup-body {
@@ -518,8 +518,8 @@ body.prevent-background-scroll {
 
 .swiper-slide {
   flex: 0 0 auto; /* Garante que os slides não se estiquem */
-  width: 260px;
-  min-height: 100%; /* Ajuste para garantir que o conteúdo não seja cortado */
+  width: 100%;
+  min-width: 260px; /* Garante largura mínima */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   background: rgba(104, 104, 104, 0.5);
   color: #fff;
