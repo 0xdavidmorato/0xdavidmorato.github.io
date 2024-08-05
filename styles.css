@@ -532,7 +532,7 @@ body.prevent-background-scroll {
 }
 
 .user-info {
-  display: flex;
+  display: flex !important;
   align-items: center;
   column-gap: 20px;
 }
