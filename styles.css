@@ -573,6 +573,8 @@ body.prevent-background-scroll {
   list-style: none;
   gap: 6px;
   margin-top: 16px;
+  z-index: 10; /* Certifique-se de que os botões estão visíveis */
+  position: relative; /* Para garantir que os itens dentro do controle sejam posicionados corretamente */
 }
 
 .control li {
@@ -580,16 +582,15 @@ body.prevent-background-scroll {
   justify-content: center;
   align-items: center;
   background: rgba(237, 223, 36, 0.8);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4),
-    inset 0px 4px 4px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), inset 0px 4px 4px rgba(255, 255, 255, 0.2);
   padding: 10px;
   margin: 3px;
   border-radius: 50%;
   cursor: pointer;
   transform: scale(1);
   transition: all 0.4s ease-in;
-  border: 2px solid red;
- }
+  border: 2px solid transparent; /* Remove o contorno vermelho ou ajuste conforme necessário */
+}
 
 .control li:hover {
   background: rgba(224, 198, 26, 0.8);
