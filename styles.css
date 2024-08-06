@@ -720,3 +720,71 @@ input:-webkit-autofill:active {
     height: 180px;
   }
 }
+
+/* -------- */
+/* CUBOS */
+
+:root {
+	--size: 75px;
+	--path: 200px;
+	--box-radius: 10%;
+  --main-color: rgba(255, 128, 0, 0.8);
+	--main-border: 2px solid rgba(128, 128, 128, 0.4);
+	//--main-gradient: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet);
+	--main-gradient: conic-gradient(red, orange, yellow, green, blue, indigo, violet);
+}
+
+body {
+	perspective: 800px;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #111;
+}
+
+.cube {
+	width: var(--path);
+	height: var(--path);
+	transform-style: preserve-3d;
+	animation: rotateCube 5s infinite linear;
+}
+
+.face {
+	position: absolute;
+	width: var(--size);;
+	height: var(--size);;
+	background-color: var(--main-color);
+	background-image: var(--main-gradient);
+	border: var(--main-border);
+	border-radius: var(--box-radius);
+}
+
+.front {
+	transform: translateZ(calc(var(--size)/2));
+}
+.back {
+	transform: rotateY(180deg) translateZ(calc(var(--size)/2));
+}
+.left {
+	transform: rotateY(-90deg) translateZ(calc(var(--size)/2));
+}
+.right {
+	transform: rotateY(90deg) translateZ(calc(var(--size)/2));
+}
+.top {
+	transform: rotateX(90deg) translateZ(calc(var(--size)/2));
+}
+.bottom {
+	transform: rotateX(-90deg) translateZ(calc(var(--size)/2));
+}
+
+@keyframes rotateCube {
+	from {
+		transform: rotateY(0deg) rotateX(0deg);
+	}
+	to {
+		transform: rotateY(360deg) rotateX(360deg);
+	}
+}
