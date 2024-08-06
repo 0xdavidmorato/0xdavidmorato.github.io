@@ -582,9 +582,9 @@ body.prevent-background-scroll {
   background: rgba(237, 223, 36, 0.8);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4),
     inset 0px 4px 4px rgba(255, 255, 255, 0.2);
-  padding: 10px;
+  padding: 5px;
   margin: 3px;
-  border-radius: 100%;
+  border-radius: 50%;
   cursor: pointer;
   transform: scale(1);
   transition: all 0.4s ease-in;
