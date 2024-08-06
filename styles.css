@@ -113,13 +113,14 @@ section {
   }
 
 .projects {
-  background: rgb(169, 207, 124);
+  background: rgb(254, 118, 252);
   background: linear-gradient(
     310deg,
-    rgb(169, 207, 124) 0%,
-    rgb(77, 120, 31) 60%
+    rgb(254, 118, 252) 0%,
+    rgb(0, 0, 0) 60%
   );
 }
+
 
 .contact {
   background-color: rgb(224, 129, 157);
@@ -127,6 +128,15 @@ section {
     340deg,
     rgb(243, 151, 178) 0%,
     rgb(147, 20, 58) 100%
+  );
+}
+
+.pagtos {
+  background: rgb(169, 207, 124);
+  background: linear-gradient(
+    310deg,
+    rgb(169, 207, 124) 0%,
+    rgb(77, 120, 31) 60%
   );
 }
 
@@ -725,66 +735,66 @@ input:-webkit-autofill:active {
 /* CUBOS */
 
 :root {
-	--size: 75px;
-	--path: 200px;
-	--box-radius: 10%;
+  --size: 75px;
+  --path: 200px;
+  --box-radius: 10%;
   --main-color: rgba(255, 128, 0, 0.8);
-	--main-border: 2px solid rgba(128, 128, 128, 0.4);
-	//--main-gradient: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet);
-	--main-gradient: conic-gradient(red, orange, yellow, green, blue, indigo, violet);
+  --main-border: 2px solid rgba(128, 128, 128, 0.4);
+  //--main-gradient: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet);
+  --main-gradient: conic-gradient(red, orange, yellow, green, blue, indigo, violet);
 }
 
 body {
-	perspective: 800px;
-	margin: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	background-color: #111;
+  perspective: 800px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #111;
 }
 
 .cube {
-	width: var(--path);
-	height: var(--path);
-	transform-style: preserve-3d;
-	animation: rotateCube 5s infinite linear;
+  width: var(--path);
+  height: var(--path);
+  transform-style: preserve-3d;
+  animation: rotateCube 5s infinite linear;
 }
 
 .face {
-	position: absolute;
-	width: var(--size);;
-	height: var(--size);;
-	background-color: var(--main-color);
-	background-image: var(--main-gradient);
-	border: var(--main-border);
-	border-radius: var(--box-radius);
+  position: absolute;
+  width: var(--size);;
+  height: var(--size);;
+  background-color: var(--main-color);
+  background-image: var(--main-gradient);
+  border: var(--main-border);
+  border-radius: var(--box-radius);
 }
 
 .front {
-	transform: translateZ(calc(var(--size)/2));
+  transform: translateZ(calc(var(--size)/2));
 }
 .back {
-	transform: rotateY(180deg) translateZ(calc(var(--size)/2));
+  transform: rotateY(180deg) translateZ(calc(var(--size)/2));
 }
 .left {
-	transform: rotateY(-90deg) translateZ(calc(var(--size)/2));
+  transform: rotateY(-90deg) translateZ(calc(var(--size)/2));
 }
 .right {
-	transform: rotateY(90deg) translateZ(calc(var(--size)/2));
+  transform: rotateY(90deg) translateZ(calc(var(--size)/2));
 }
 .top {
-	transform: rotateX(90deg) translateZ(calc(var(--size)/2));
+  transform: rotateX(90deg) translateZ(calc(var(--size)/2));
 }
 .bottom {
-	transform: rotateX(-90deg) translateZ(calc(var(--size)/2));
+  transform: rotateX(-90deg) translateZ(calc(var(--size)/2));
 }
 
 @keyframes rotateCube {
-	from {
-		transform: rotateY(0deg) rotateX(0deg);
-	}
-	to {
-		transform: rotateY(360deg) rotateX(360deg);
-	}
+  from {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  to {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
 }
