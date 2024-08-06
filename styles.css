@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Marhey:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+/* Estilo para o link de e-mail */
+a.email-link {
+  color: #3498db; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado padrão */
+  font-weight: bold; /* Texto em negrito */
+  padding: 5px 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s, color 0.3s; /* Animação de transição */
+}
+
+a.email-link:hover {
+  background-color: #2980b9; /* Cor de fundo ao passar o mouse */
+  color: #fff; /* Cor do texto ao passar o mouse */
+}
 
 * {
   box-sizing: border-box;
