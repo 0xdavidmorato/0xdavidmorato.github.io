@@ -804,3 +804,48 @@ body {
     transform: rotateY(360deg) rotateX(360deg);
   }
 }
+/* FAQ */
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  background-color: rgba(255, 255, 255, 0.2); /* Fundo transparente com um toque de branco */
+  padding: 15px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Bordas suaves e consistentes com o tema */
+  text-align: left;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff; /* Texto branco para contraste */
+  backdrop-filter: blur(5px);
+  transition: background-color 0.3s, border 0.3s;
+  border-radius: 12px; /* Cantos arredondados */
+}
+
+.faq-question:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Leve mudança de cor ao passar o mouse */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro para contrastar com o tema */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Bordas suaves */
+  color: #f7f7f7; /* Texto claro para boa leitura */
+  backdrop-filter: blur(5px);
+  border-radius: 12px; /* Cantos arredondados */
+}
+
+.arrow {
+  float: right;
+  font-size: 18px;
+  color: #fff; /* Cor branca para a seta */
+  transition: transform 0.3s;
+}
+
+.faq-question.active .arrow {
+  transform: rotate(180deg); /* Rotaciona a seta ao abrir */
+}
+
