@@ -854,5 +854,5 @@ body {
 }
 
 .dock-icon:hover {
-    transform: rotate(360deg) scale(1.8);
+    transform: rotate(360deg) scale(1.6);
 }
