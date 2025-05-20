@@ -337,8 +337,8 @@ body.prevent-background-scroll {
   overflow: hidden;
   width: 250px;
   border-radius: 8px;
-  box-shadow: rgba(24, 71, 125, 1) 0px 10px 30px 8px,
-    rgba(62, 63, 168, 0.8) 0px 0px 0px 2px;
+  /* box-shadow: rgba(24, 71, 125, 1) 0px 10px 30px 8px,
+    rgba(62, 63, 168, 0.8) 0px 0px 0px 2px; */
 }
 
 .about-container .img-frame img {
