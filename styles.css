@@ -64,7 +64,7 @@ body {
   background-image: url(david_reuniao_online.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center top; /* <-- posiciona a imagem no topo central */
 }
 
 section {
