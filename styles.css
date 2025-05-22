@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Marhey:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+header {
+    position: fixed;
+    color: #fff;
+    padding: 10px 30;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9; /* garante que fique acima de outros elementos */
+    box-shadow: 0 2px 5px rgb(255, 255, 255); /* opcional, só para um visual mais bonito */
+  }
 /* Estilo para o link de e-mail */
 a.email-link {
   color: #3498db; /* Cor do texto */
