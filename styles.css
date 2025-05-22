@@ -692,7 +692,7 @@ input:-webkit-autofill:active {
 }
 
 .submit-btn span {
-  display: ;
+  display: none;
   gap: 10px;
 }
 
@@ -760,7 +760,7 @@ input:-webkit-autofill:active {
   --box-radius: 10%;
   --main-color: rgba(255, 128, 0, 0.8);
   --main-border: 2px solid rgba(128, 128, 128, 0.4);
-  //--main-gradient: linear-gradient(to bottom right, #432818, blue, green, #432818, blue, green, #432818);
+  --main-gradient: linear-gradient(to bottom right, #432818, blue, green, #432818, blue, green, #432818);
   --main-gradient: conic-gradient(#432818, blue, green, #432818, blue, green, #432818);
 }
 
