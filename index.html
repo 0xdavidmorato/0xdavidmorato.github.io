@@ -6,7 +6,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  
     <section>
+                    <!-- ANIMAÇÃO CUBOS -->
+                        <div class="cube">
+                            <div class="face front"></div>
+                            <div class="face back"></div>
+                            <div class="face left"></div>
+                            <div class="face right"></div>
+                            <div class="face top"></div>
+                            <div class="face bottom"></div>
+                        </div>
+                        <div class="cube" style="animation-delay: 1.67s;">
+                            <div class="face front"></div>
+                            <div class="face back"></div>
+                            <div class="face left"></div>
+                            <div class="face right"></div>
+                            <div class="face top"></div>
+                            <div class="face bottom"></div>
+                        </div>
+                        <div class="cube" style="animation-delay: 3.33s;">
+                            <div class="face front"></div>
+                            <div class="face back"></div>
+                            <div class="face left"></div>
+                            <div class="face right"></div>
+                            <div class="face top"></div>
+                            <div class="face bottom"></div>
+                        </div>
+                    <!-- FIM ANIMAÇÃO CUBOS -->
       <div class="icon-container">
         <div class="icon-box about dock-icon" data-modal="about">
           <i class="fa fa-user-o"></i>
@@ -45,13 +72,13 @@
         <div class="popup-body about-container">
           <div class="img-frame">
             <img
-              src="https://raw.githubusercontent.com/0xdavidmorato/0xdavidmorato.github.io/main/David_work1.jpg"
+              src="assets/imagens/David_work1.jpg"
               alt="David Web Developer">
           </div>
           <div class="hero-content">
             <h1>David Morato</h1>
             <p style="text-align: justify;">
-              Formado em Tecnologia em Analise e Desenvolvimento de Sistemas. Qualificado nas áreas de desenvolvimento web frontend e backend, web3, hardware, software, redes e ited. Me dedico a criar soluções visualmente atraentes e fáceis de usar. Estou sempre disposto a novos aprendizados e acredito no poder do trabalho em equipe e de colaboração. Gosto de trabalhar em conjunto com profissionais competentes para oferecer soluções coesas e eficazes.
+              Freelancer nas áreas de desenvolvimento web, front-end e back-end, web3, hardware, software, redes e ited. Gosto de criar soluções visualmente atraentes e simples de usar. Trabalho em conjunto com profissionais competentes para oferecer soluções coesas e eficazes.
             </p>
           </div>
         </div>
@@ -76,7 +103,9 @@
 
         <div class="popup-body">
           <div class="skill-list">
-            <h1>Minhas principais Skills</h1>
+            <h1>Qualificações</h1><hr>
+            <br>
+            <h2>Web</h2>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -84,35 +113,48 @@
               <li>Bootstrap</li>
               <li>React</li>
               <li>Solidity</li>
+            </ul><br>
+            <h2>Assistência Técnica</h2>
+            <ul>              
               <li>Hardware</li>
               <li>Software</li>
-              <li>Redes</li>
+              <li>Redes</li>             
+            </ul>
+
+            <br>
+            <h2>ITED</h2>
+            <ul>              
+              <li>Fibra Ótica</li>
+              <li>Fusões</li>
+              <li>Par de Cobre</li>
+              <li>Cabeamento Estruturado</li>
+              <li>Conectorização e Certificação</li>
             </ul>
           </div>
-
+<hr>
           <div class="project-container">
             <h1>Projetos</h1>
             <div class="all-projects">
               <div class="project-box">
                 <img
-                  src="https://raw.githubusercontent.com/0xdavidmorato/0xdavidmorato.github.io/main/home_drinkdrips.webp"
+                  src="assets/imagens/drinkdrips.webp"
                   alt="" />
                 <div class="overlay">
                   <h3>DrinkDrips</h3>
-                  <button id="more-btn" class="more-btn">
-                    <span>Visite o site</span>
+                  <button id="more-btn-drinkdrips" class="more-btn">
+                    <span>Visite</span>
                   </button>
                 </div>
               </div>
-<!--
+
               <div class="project-box">
                 <img
-                  src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/08c8b66f-7e24-42d9-848d-23e30f7e1968"
+                  src="assets/imagens/music.webp"
                   alt="" />
                 <div class="overlay">
-                  <h3>Landing Page Template</h3>
-                  <button class="more-btn">
-                    <span>Learn More</span>
+                  <h3>Página Pessoal</h3>
+                  <button id="more-btn-david" class="more-btn">
+                    <span>Visite</span>
                   </button>
                 </div>
               </div>
@@ -122,24 +164,24 @@
                   src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/d6e74bee-a0f6-416e-98cc-b0985caf507f"
                   alt="" />
                 <div class="overlay">
-                  <h3>Travel Landing Page</h3>
+                  <h3>Landing Page Viagens</h3>
                   <button class="more-btn">
-                    <span>Learn More</span>
+                    <span>Em breve</span>
                   </button>
                 </div>
               </div>
 
               <div class="project-box">
                 <img
-                  src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/28946a23-30af-4b36-b30b-e4a3e696aaf6"
+                  src="assets/imagens/quadro_yaya.webp"
                   alt="" />
                 <div class="overlay">
-                  <h3>Plant Search App</h3>
+                  <h3>Galeria de Artes</h3>
                   <button class="more-btn">
-                    <span>Learn More</span>
+                    <span>Em breve</span>
                   </button>
                 </div>
-              </div> -->
+              </div> <!-- -->
             </div>
           </div>
         </div>
@@ -159,33 +201,7 @@
             <h1>Serviços</h1>
             <div class="slider-container">
                 <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <!-- ANIMAÇÃO CUBOS -->
-                        <div class="cube">
-                            <div class="face front"></div>
-                            <div class="face back"></div>
-                            <div class="face left"></div>
-                            <div class="face right"></div>
-                            <div class="face top"></div>
-                            <div class="face bottom"></div>
-                        </div>
-                        <div class="cube" style="animation-delay: 1.67s;">
-                            <div class="face front"></div>
-                            <div class="face back"></div>
-                            <div class="face left"></div>
-                            <div class="face right"></div>
-                            <div class="face top"></div>
-                            <div class="face bottom"></div>
-                        </div>
-                        <div class="cube" style="animation-delay: 3.33s;">
-                            <div class="face front"></div>
-                            <div class="face back"></div>
-                            <div class="face left"></div>
-                            <div class="face right"></div>
-                            <div class="face top"></div>
-                            <div class="face bottom"></div>
-                        </div>
-                        <!-- FIM ANIMAÇÃO CUBOS -->
+                    <div class="swiper-wrapper">                   
 
                         <!-- Slides dos serviços -->
                         <div class="swiper-slide">
@@ -283,7 +299,6 @@
                                 </li>
                             </ul>
                         </div>
-
 
                         <div class="swiper-slide">
                             <div class="user-info">
@@ -389,9 +404,7 @@
         </div>
     </div>
 </div>
-
-
-  <!-- FIM DASHBOARD SERVICES -->
+<!-- FIM DASHBOARD SERVICES -->
 
 
 <!-- DASHBOARD CONTATO -->
@@ -727,27 +740,30 @@ O valor restante pode ser acordado de forma a manter o equilíbrio e a conveniê
   <!-- FIM DASHBOARD PAGAMENTOS -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <script>
-  document.getElementById('more-btn').addEventListener('click', function() {
-    window.open('https://drinkdrips.github.io', '_blank');
-  });
-</script>
+    <script>
+      document.getElementById('more-btn-drinkdrips').addEventListener('click', function() {
+        window.open('https://drinkdrips.github.io', '_blank');
+      });
+      document.getElementById('more-btn-david').addEventListener('click', function() {
+        window.open('https://0xdavidmorato.github.io/music', '_blank');
+      });
+    </script>
 
-<script>
-// JavaScript to handle FAQ toggle
-const faqItems = document.querySelectorAll('.faq-item');
+    <script>
+    // JavaScript to handle FAQ toggle
+    const faqItems = document.querySelectorAll('.faq-item');
 
-faqItems.forEach(item => {
-  const question = item.querySelector('.faq-question');
-  question.addEventListener('click', () => {
-    const answer = item.querySelector('.faq-answer');
-    const arrow = item.querySelector('.arrow');
-    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-    arrow.innerHTML = answer.style.display === 'block' ? '&#9650;' : '&#9660;';
-  });
-});
-</script>
-
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const answer = item.querySelector('.faq-answer');
+        const arrow = item.querySelector('.arrow');
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        arrow.innerHTML = answer.style.display === 'block' ? '&#9650;' : '&#9660;';
+      });
+    });
+    </script>
+    
   </body>
   <script src="script.js"></script>
   </html>

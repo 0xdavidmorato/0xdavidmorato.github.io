@@ -38,6 +38,13 @@ h1 {
   animation: title 1.1s ease 0.3s 1 normal forwards;
 }
 
+h2 {
+  font-family: "Marhey", sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.2rem);
+  opacity: 0;
+  animation: title 1.1s ease 0.3s 1 normal forwards;
+}
+
 @keyframes title {
   0% {
     opacity: 0;
@@ -61,7 +68,7 @@ body {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url(david.png);
+  background-image: url(assets/imagens/david.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top; /* <-- posiciona a imagem no topo central */
@@ -366,9 +373,15 @@ body.prevent-background-scroll {
   margin-bottom: 30px;
 }
 
+.skill-list h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .skill-list ul {
   display: flex;
   flex-wrap: wrap;
+  border-radius: 50px;
   justify-content: center;
   align-items: center;
   gap: 12px;
@@ -379,11 +392,11 @@ body.prevent-background-scroll {
 .skill-list ul li {
   font-size: 1rem;
   font-weight: 500;
-  border-radius: 5px;
+  border-radius: 50px;
   background: linear-gradient(
     130deg,
-    rgba(162, 234, 55, 0.7) 0%,
-    rgba(46, 152, 74, 0.5) 100%
+    rgba(58, 35, 0, 0.9) 10%,
+    rgba(0, 207, 55, 0.5) 70%
   );
   backdrop-filter: blur(30px);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -747,8 +760,8 @@ input:-webkit-autofill:active {
   --box-radius: 10%;
   --main-color: rgba(255, 128, 0, 0.8);
   --main-border: 2px solid rgba(128, 128, 128, 0.4);
-  //--main-gradient: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet);
-  --main-gradient: conic-gradient(red, orange, yellow, green, blue, indigo, violet);
+  //--main-gradient: linear-gradient(to bottom right, #432818, blue, green, #432818, blue, green, #432818);
+  --main-gradient: conic-gradient(#432818, blue, green, #432818, blue, green, #432818);
 }
 
 body {
