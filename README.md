@@ -1,40 +1,44 @@
-# David Morato - Portfólio
+# David Morato — portfolio
 
-Bem-vindo ao meu portfólio! Sou David Morato, um profissional independente formado em Tecnologia em Análise e Desenvolvimento de Sistemas. Tenho experiência em serviços de rede, informática e desenvolvimento web, tanto front-end quanto back-end.
+Website pessoal de David Morato, centrado em desenvolvimento e automação assistidos por IA. É um site estático, intencionalmente sem framework ou dependências de produção, para manter o deploy no GitHub Pages rápido e simples.
 
-## Habilidades
+## Executar localmente
 
-- **Front-end:** HTML5, CSS3, JavaScript, React, Vue.js, Bootstrap, Tailwind CSS
-- **Back-end:** Experiência com integração de sistemas e desenvolvimento de APIs
+Não há etapa de instalação. Abra index.html num navegador ou sirva a pasta com um servidor HTTP local:
 
-## Projetos
+    python3 -m http.server 8000
 
-### [Adventure Landing Page](https://0xdavidmorato.github.io/projects/adventure-landing-page)
-Uma página de destino para promover aventuras ao ar livre, com design responsivo e interativo.
+Depois, visite http://localhost:8000.
 
-### [Landing Page Template](https://0xdavidmorato.github.io/projects/landing-page-template)
-Modelo de página de destino multiuso, adaptável para diferentes tipos de negócios.
+## Validação
 
-### [Travel Landing Page](https://0xdavidmorato.github.io/projects/travel-landing-page)
-Página de destino focada em promover destinos turísticos, com design atraente e informativo.
+O workflow de CI valida a sintaxe do JavaScript e o HTML a cada pull request e push para main. Para a revisão final, testar visualmente em desktop e mobile, validar todos os links e conferir o contacto por e-mail.
 
-### [Plant Search App](https://0xdavidmorato.github.io/projects/plant-search-app)
-Aplicativo para busca de plantas, proporcionando uma interface amigável para os usuários explorarem diferentes espécies.
+## Deploy
 
-## Serviços
+O repositório é adequado para GitHub Pages com a opção **Deploy from a branch**, selecionando main e a pasta / (root). Não existe build: o GitHub Pages publica os ficheiros da raiz.
 
-- **Desenvolvimento Front-end:** Criação de interfaces de usuário, design responsivo, integração de frameworks
-- **Controle de Versão:** Uso de Git para gerenciamento de código e colaboração
-- **Hardware e Software:** Serviços de reparo e manutenção, incluindo backup, formatação e mais
-- **Design Gráfico:** Criação de logotipos, banners, material promocional e mais
+O antigo endpoint PHP foi removido porque o GitHub Pages não executa PHP. O contacto é feito por ligação mailto; caso seja necessário um formulário, adicionar um serviço de backend ou endpoint de formulário antes de o publicar.
 
-## Contato
+## Workflow de Git e GitHub
 
-Para mais informações ou para discutir um projeto, entre em contato comigo:
+1. Criar uma branch de feature a partir de main: git switch -c feature/nome-da-alteracao.
+2. Fazer alterações pequenas, validar localmente e criar commits claros.
+3. Abrir uma pull request para main.
+4. Aguardar os checks de CI e fazer revisão.
+5. Fazer merge depois da aprovação; o GitHub Pages publica a versão atualizada.
 
-- **E-mail:** 0xdavidmorato@gmail.com
-- [Portfólio Online](https://0xdavidmorato.github.io/)
+Recomendação para as configurações do repositório: proteger main, exigir pull request e aprovação antes de merge e exigir o check **Validate site**. Estas opções requerem permissões administrativas no GitHub.
 
----
+## Estrutura
 
-Obrigado por visitar meu portfólio!
+- index.html — conteúdo, semântica e metadados SEO
+- styles.css — design responsivo e animações
+- script.js — navegação mobile e animações de entrada
+- assets/ — fotografia e imagens reutilizadas dos projetos
+- .github/workflows/validate.yml — validação contínua
+- robots.txt, sitemap.xml, favicon.svg — descoberta e identidade básica
+
+## Conteúdo a completar
+
+Os projetos apresentados usam apenas links já existentes no repositório. Ao disponibilizar novos case studies, acrescentar problema, processo, papel desempenhado, tecnologias e resultados verificáveis — sem alegações não comprovadas.
