@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="200" viewBox="0 0 620 200" role="img" aria-labelledby="title desc">
+  <title id="title">David Morato</title>
+  <desc id="desc">Logotipo profissional do nome David Morato em estilo premium moderno.</desc>
+  <defs>
+    <linearGradient id="dmGradient" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="#f5f1ff"/>
+      <stop offset="55%" stop-color="#d9c9ff"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="dotGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#80e9ff"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(30 24)">
+    <text x="0" y="102" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="72" font-weight="700" letter-spacing="-3.5" fill="#f5f1ff">David</text>
+    <text x="262" y="102" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="72" font-weight="800" letter-spacing="-3.5" fill="url(#dmGradient)">Morato</text>
+
+    <line x1="0" y1="131" x2="228" y2="131" stroke="rgba(255,255,255,0.28)" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="580" cy="131" r="8" fill="url(#dotGradient)" opacity="0.9"/>
+  </g>
+</svg>
